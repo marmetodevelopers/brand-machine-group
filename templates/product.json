@@ -1,0 +1,144 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "44f2aeb8-c1ca-40c2-98d3-f71be9e04cda": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.short_product_description.value }}",
+            "text_style": "body"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "15b7ae76-4dce-45c6-bfc2-82df8c6685b8": {
+          "type": "product-desc",
+          "settings": {
+          }
+        },
+        "41dada69-4676-46a5-86ef-d59acfee9171": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Composition",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.composition.value }}<\/p>",
+            "page": ""
+          }
+        },
+        "269a5bcd-5eda-44b1-a654-a668a556206b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Guide",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.care_guide.value }}<\/p>",
+            "page": ""
+          }
+        },
+        "ce88d161-473a-4ede-b890-0017143ddb4b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Delivery",
+            "icon": "none",
+            "content": "<p><strong>U.K. Standard Delivery: <br\/><\/strong>Our U.K. standard delivery service aims to deliver your order within 7 to 10 Business Days. This service is <strong>Free<\/strong> for all orders over £150 and costs <strong>£4.99<\/strong> for all orders under £150.<\/p><p><strong>U.S.A. International Delivery: <br\/><\/strong>Our U.S. standard delivery service aims to deliver your order within 7 to 15 Business Days. This service costs <strong>$20<\/strong> for all orders.<\/p><p><strong>European International Delivery: <br\/><\/strong>Our European standard delivery service aims to deliver your order within 7 to 10 Business Days. This service costs <strong>€25<\/strong> for all orders.<\/p><p>We use the DHL courier service for all our parcel shipments. Order by noon for same-day dispatch. Please note, there's no delivery service on UK Bank Holidays. For further details please visit our <a href=\"\/pages\/shipping-delivery\" title=\"Shipping & Delivery\"><span style=\"text-decoration:underline\">Shipping & Delivery Policy<\/span><\/a>.  <\/p>",
+            "page": ""
+          }
+        },
+        "cd5be3cb-1db2-41f1-a808-ae76392eb415": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Refunds & Returns",
+            "icon": "none",
+            "content": "<p>You have the option to receive a refund for online purchases when accompanied by a valid receipt or parcel summary documentation, within 28 days, except for sale items, which must be returned within 14 days of receipt.<br\/><br\/>For further details, please visit our <a href=\"\/pages\/returns-refunds\" title=\"Returns & Refunds\"><span style=\"text-decoration:underline\">Returns & Refunds Policy<\/span><\/a>.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "44f2aeb8-c1ca-40c2-98d3-f71be9e04cda",
+        "price",
+        "variant_picker",
+        "buy_buttons",
+        "15b7ae76-4dce-45c6-bfc2-82df8c6685b8",
+        "41dada69-4676-46a5-86ef-d59acfee9171",
+        "269a5bcd-5eda-44b1-a654-a668a556206b",
+        "ce88d161-473a-4ede-b890-0017143ddb4b",
+        "cd5be3cb-1db2-41f1-a808-ae76392eb415"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "columns",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "16ea9d2a-6581-4dd1-9b53-066d26d290c7": {
+      "type": "mm-recently-viewed-products",
+      "settings": {
+        "title": "RECENTLY VIEW"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "16ea9d2a-6581-4dd1-9b53-066d26d290c7"
+  ]
+}

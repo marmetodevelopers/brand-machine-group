@@ -1,0 +1,75 @@
+{%- if product.metafields.custom.product_bundle -%}
+  {{ 'product-bundle.css' | asset_url | stylesheet_tag }}
+  <div class="product-bundle__section">
+    <div class="page-width">
+      <div class="product-bundle__section-page-width">
+        <div class="product-bundle__section-inner">
+          <div class="product-bundle__heading h1">
+              {{ section.settings.bundle_heading }}
+          </div>
+          <div class="product-bundle__container">
+              <div class="product-bundle__content flex-space-center">
+                  <div class="product-bundle__cards flex-space-center">
+                    {% assign handle_variants = product.metafields.custom.product_bundle | split: "|" %}
+                    {% for handle_variant in handle_variants %}
+                      {% assign product_handle = handle_variant | split: '--' | first | handleize %}
+                      {% assign product_option_select = handle_variant | split: '--' | last %}
+                      {% assign bundle_product = all_products[product_handle] %}
+                      <div class="bundle-product-card">
+                        {% render 'card-lookbook', 
+                          card_product: bundle_product,
+                          show_variant_picker: true,
+                          hide_option: 'color',
+                          selected_option_value: product_option_select,
+                          show_add_to_cart: true,
+                        %}
+                        <div class="bundle-checkbox__contanier">
+                          <div class="container">
+                            <div class="round">
+                              <input type="checkbox" id="bundle-{{ bundle_product.id }}" value="" checked>
+                              <label for="bundle-{{ bundle_product.id }}"></label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bundle-plus__icon">{% render 'icon-plus' %}</div>
+                      </div>
+                    {% endfor %}  
+                  </div>
+                  <div class="bundle-atc__container flex-center-center">
+                    <div class="bundle-total__price">
+                      <span>Total Price:</span>
+                      <span class="bundle-price h3">
+                          £4,620.00 
+                      </span>
+                    </div> 
+                      <button class="bundle-atc button button--full-width button--primary">ADD TO CART</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Product Bundle",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Product Bundle"
+      },
+      {
+        "type": "text",
+        "id": "bundle_heading",
+        "label": "Heading"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Bundle"
+      }
+    ]
+  }
+{% endschema %}

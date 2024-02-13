@@ -1,0 +1,137 @@
+{% comment %}
+  @Limitations
+  - {% assign cart_upsell_products = cart_upsell_products | concat: product_list %}
+  - ^This did not work because Shopify does not support 'concat' for product list input settings.
+  - Used 'product.handle' for creating unique upsell product list array
+  - Cannot use dynamic section settings as dynamic json template sections will have a different section id and settings will not be pulled for cart refresh.
+{% endcomment %}
+
+{% style %}
+    cart-upsell .button, 
+    cart-upsell-recommendations .button {
+        min-width: unset; 
+        max-width: 100%;
+    }
+{% endstyle %}
+
+{% liquid 
+  assign enable_dynamic_product_recommendations = section.settings.enable_dynamic_product_recommendations
+
+  unless enable_dynamic_product_recommendations
+    assign cart_upsell_products = nil
+    assign cart_product_handles = cart.items | map: 'product' | map: 'handle'
+
+    for block in section.blocks
+      assign buy_product_selector_type = block.settings.product_selector_type
+      assign buy_product_selectors = block.settings.product_selectors | downcase | split: ','
+      assign minimum_quantity_to_buy = block.settings.minimum_quantity
+      assign maximum_quantity_to_buy = block.settings.maximum_quantity
+      assign minimum_amount_to_buy = block.settings.minimum_amount | times: 100
+      assign maximum_amount_to_buy = block.settings.maximum_amount | times: 100
+      assign product_list = block.settings.product_list | map: 'handle' | join: ','
+
+      assign has_buy_products_quantity = 0
+      assign has_buy_products_amount = 0
+
+      for line_item in cart.items
+        assign product_tags = line_item.product.tags | join: ',' | downcase
+        assign line_item_product_type = line_item.product.type | downcase 
+        assign line_item_vendor = line_item.vendor | downcase 
+        assign line_item_product_id = line_item.product_id | append: '' 
+        assign line_item_variant_id = line_item.variant_id | append: '' 
+
+        case buy_product_selector_type 
+          when 'tag'
+            for buy_product_selector in buy_product_selectors
+              if product_tags contains buy_product_selector 
+                assign has_buy_products_quantity = has_buy_products_quantity | plus: line_item.quantity 
+                assign has_buy_products_amount = has_buy_products_amount | plus: line_item.final_line_price 
+
+                break 
+              endif 
+            endfor 
+          when 'type'
+            if buy_product_selectors contains line_item_product_type 
+              assign has_buy_products_quantity = has_buy_products_quantity | plus: line_item.quantity 
+              assign has_buy_products_amount = has_buy_products_amount | plus: line_item.final_line_price 
+            endif 
+          when 'vendor'
+            if buy_product_selectors contains line_item_vendor 
+              assign has_buy_products_quantity = has_buy_products_quantity | plus: line_item.quantity 
+              assign has_buy_products_amount = has_buy_products_amount | plus: line_item.final_line_price 
+            endif 
+          when 'product_id'
+            if buy_product_selectors contains line_item_product_id 
+              assign has_buy_products_quantity = has_buy_products_quantity | plus: line_item.quantity 
+              assign has_buy_products_amount = has_buy_products_amount | plus: line_item.final_line_price 
+            endif 
+          when 'variant_id'
+            if buy_product_selectors contains line_item_variant_id 
+              assign has_buy_products_quantity = has_buy_products_quantity | plus: line_item.quantity 
+              assign has_buy_products_amount = has_buy_products_amount | plus: line_item.final_line_price 
+            endif 
+          else 
+            assign has_buy_products_quantity = has_buy_products_quantity | plus: line_item.quantity 
+            assign has_buy_products_amount = has_buy_products_amount | plus: line_item.final_line_price 
+        endcase 
+      endfor 
+
+      if has_buy_products_quantity >= minimum_quantity_to_buy and has_buy_products_quantity <= maximum_quantity_to_buy and has_buy_products_amount >= minimum_amount_to_buy and has_buy_products_amount <= maximum_amount_to_buy and product_list != blank 
+        if cart_upsell_products 
+          assign cart_upsell_products = cart_upsell_products | append: ',' | append: product_list 
+        else 
+          assign cart_upsell_products = product_list 
+        endif 
+      endif 
+    endfor 
+
+    capture upsell_products_markup
+      assign upsell_product_handles = cart_upsell_products | split: ',' | uniq
+      assign show_upselling_if_upsell_product_available = false
+
+      for upsell_product_handle in upsell_product_handles limit: section.settings.limit_upsell_products
+        unless cart_product_handles contains upsell_product_handle 
+          assign show_upselling_if_upsell_product_available = true
+          
+          render 'card-product-upsell', card_product: all_products[upsell_product_handle]
+        endunless
+      endfor
+    endcapture
+  endunless
+%}
+
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{% if enable_dynamic_product_recommendations %}
+  <script src="{{ 'cart-upsell-recommendations.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+{{ 'card-product-upsell.css' | asset_url | stylesheet_tag }}
+
+{% comment %}
+  We are checking cart != empty here and not in the main cart-drawer snippet where the cart-upsell.liquid snippet 
+  is loaded because JavaScript file do not execute if appended from Ajax unless we add additional codes. 
+{% endcomment %}
+
+{% if cart != empty and enable_dynamic_product_recommendations %}
+    {% if section.settings.upsell_heading != blank %}
+        <div class="cart-upsell-recommendations__heading body-bold">{{ section.settings.upsell_heading }}</div>
+    {% endif %}
+  <cart-upsell-recommendations
+    class="cart-upsell-recommendations"
+      data-product-ids="{{ cart.items | map: 'product' | map: 'id' | json }}"
+      data-limit="{{ section.settings.limit_upsell_products }}"
+      data-intent="{{ section.settings.recommendation_intent }}"
+  >
+
+  </cart-upsell-recommendations>
+{% elsif cart != empty and show_upselling_if_upsell_product_available %}
+  {% if section.settings.upsell_heading != blank  %}
+    <h3 class="cart-upsell__heading">{{ section.settings.upsell_heading }}</h3>
+  {% endif %}
+  <cart-upsell
+    class="cart-upsell"
+  >
+
+  {{ upsell_products_markup }}
+
+  </cart-upsell>
+{% endif %}

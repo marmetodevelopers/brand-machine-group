@@ -1,0 +1,177 @@
+{%- render 'cart-drawer' -%}
+
+{% schema %}
+  {
+    "name": "Cart drawer",
+    "class": "section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Cart upsell"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_upsell",
+        "label": "Enable upsell",
+        "default": true
+      },
+      {
+        "type": "inline_richtext",
+        "id": "upsell_heading",
+        "default": "You may also like",
+        "label": "Upsell heading"
+      },
+      {
+        "type": "range",
+        "id": "limit_upsell_products",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "label": "Limit upsell products",
+        "default": 10
+      }, 
+      {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          }, {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          }, {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
+      }, 
+      {
+        "type": "checkbox",
+        "id": "enable_dynamic_product_recommendations",
+        "label": "Enable dynamic product recommendations",
+        "default": true,
+        "info": "Uses Product Recommendations API to recommend related products for all cart products. Upsell blocks will cease to function if this is turned on."
+      }, 
+      {
+        "type": "select",
+        "id": "recommendation_intent",
+        "options": [
+          {
+            "value": "related",
+            "label": "Related"
+          }, {
+            "value": "complementary",
+            "label": "Complementary"
+          }
+        ],
+        "default": "related",
+        "label": "Recommendation intent",
+        "info": "Shopify offers two types of product recommendations: related and complementary. Related recommendations suggest similar products, while complementary recommendations suggest products that go well together. Shopify generates related recommendations, but complementary ones need manual setup using the Shopify Search & Discovery app. [Learn more](https://shopify.dev/docs/themes/product-merchandising/recommendations#recommendation-intents)"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "upsell",
+        "name": "Upsell Rule",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Cart has products"
+          },
+          {
+            "type": "select",
+            "id": "product_selector_type",
+            "label": "Product selector type",
+            "options": [
+              {
+                "value": "tag",
+                "label": "Tag"
+              },
+              {
+                "value": "type",
+                "label": "Type"
+              },
+              {
+                "value": "vendor",
+                "label": "Vendor"
+              },
+              {
+                "value": "product_id",
+                "label": "Product ID"
+              },
+              {
+                "value": "variant_id",
+                "label": "Variant ID"
+              },
+              {
+                "value": "all",
+                "label": "All"
+              }
+            ],
+            "default": "all"
+          },
+          {
+            "type": "text",
+            "id": "product_selectors",
+            "label": "Product selectors",
+            "info": "List of product identifiers separated by commas. If 'All' is selected in Selector Type, this can be left empty. Do not add spaces."
+          },
+          {
+            "type": "header",
+            "content": "Condition: Quantity"
+          },
+          {
+            "type": "number",
+            "id": "minimum_quantity",
+            "label": "Minimum quantity",
+            "default": 0,
+            "info": "Minimum number of products that a customer needs to purchase to qualify."
+          },
+          {
+            "type": "number",
+            "id": "maximum_quantity",
+            "label": "Maximum quantity",
+            "default": 99999999,
+            "info": "Highest number of products that can be purchased before the upsell offer is no longer available."
+          },
+          {
+            "type": "header",
+            "content": "Condition: Subtotal"
+          },
+          {
+            "type": "number",
+            "id": "minimum_amount",
+            "label": "Minimum amount",
+            "default": 0,
+            "info": "Minimum price amount of products that a customer needs to purchase to qualify."
+          },
+          {
+            "type": "number",
+            "id": "maximum_amount",
+            "label": "Maximum amount",
+            "default": 99999999,
+            "info": "Highest price amount of products that can be purchased before the upsell offer is no longer available."
+          },
+          {
+            "type": "header",
+            "content": "Recommend products"
+          },
+          {
+            "type": "product_list",
+            "id": "product_list",
+            "label": "Select products",
+            "limit": 10
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Cart drawer"
+      }
+    ]
+  }
+{% endschema %}

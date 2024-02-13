@@ -1,0 +1,669 @@
+{
+  "sections": {
+    "857e5c29-9978-406f-a4d7-24c2efbe0e39": {
+      "type": "slideshow",
+      "blocks": {
+        "98761e34-bc93-4d91-bdbe-116767b005df": {
+          "type": "slide",
+          "settings": {
+            "image_banner_link": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_4168.jpg",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "separator_line": false,
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "shopify:\/\/collections\/frontpage",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-9f9449a3-e82b-43d5-aace-183e10c3ba44",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "e78d7690-c741-46d1-85e4-f77a65662f57": {
+          "type": "slide",
+          "settings": {
+            "image_banner_link": "",
+            "image": "shopify:\/\/shop_images\/Home_Page-updated.png",
+            "heading": "",
+            "heading_size": "h1",
+            "separator_line": false,
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-9f9449a3-e82b-43d5-aace-183e10c3ba44",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "98761e34-bc93-4d91-bdbe-116767b005df",
+        "e78d7690-c741-46d1-85e4-f77a65662f57"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "",
+        "padding_top": 10,
+        "padding_bottom": 20
+      }
+    },
+    "1c453e78-2e19-49a7-81db-6133e38c1a22": {
+      "type": "new-multi-image-banner",
+      "blocks": {
+        "template--20397617152328__1c453e78-2e19-49a7-81db-6133e38c1a22-block-1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4216_1.jpg",
+            "image_banner_link": "",
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "ded4957e-fd38-406e-a937-b77738669883": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4216.jpg",
+            "image_banner_link": "",
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "ad22c2ab-4f91-4271-9226-f17e495c4a7c": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4214.jpg",
+            "image_banner_link": "",
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20397617152328__1c453e78-2e19-49a7-81db-6133e38c1a22-block-1",
+        "ded4957e-fd38-406e-a937-b77738669883",
+        "ad22c2ab-4f91-4271-9226-f17e495c4a7c"
+      ],
+      "settings": {
+        "heading_text": "NEW ARRIVALS",
+        "flex_banners_number": "three",
+        "image_overlay_opacity": 0,
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "bmg_brands_section_8mnN9e": {
+      "type": "bmg-brands-section",
+      "blocks": {
+        "block_NCcBFx": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42_5.jpg",
+            "image_link": "https:\/\/74ac84-2.myshopify.com\/pages\/brand-homepage",
+            "image_text": "A-Z BRANDS"
+          }
+        },
+        "block_px9fhH": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42_4.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "block_C9WadJ": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42_1.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "block_imwyjq": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "block_C3LbzC": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42_2.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "block_imNbL6": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42_3.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        }
+      },
+      "block_order": [
+        "block_NCcBFx",
+        "block_px9fhH",
+        "block_C9WadJ",
+        "block_imwyjq",
+        "block_C3LbzC",
+        "block_imNbL6"
+      ],
+      "settings": {
+        "heading_text": "NEW ARRIVALS",
+        "enable_slider": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "fk-btn-color": "#000000"
+      }
+    },
+    "5ebddcba-62d0-420d-8bc0-6b88186265f6": {
+      "type": "image-text",
+      "blocks": {
+        "template--20397617152328__5ebddcba-62d0-420d-8bc0-6b88186265f6-block-1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42_5.jpg",
+            "image_link": "shopify:\/\/pages\/brand-homepage",
+            "image_text": "A-Z Brands"
+          }
+        },
+        "d84b95b5-8ecb-49b8-95bd-5bf3f3770d34": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42_4.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "0ae0ac7b-da0e-4d2e-8980-9b3aa6bb9f56": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42_1.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "f283b1ed-9b21-4cb6-99d1-bf16df50a328": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "9e722ee9-aada-47e8-8af3-32ddc77e6b7f": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42_2.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "921f00f7-1c20-4d98-9af3-c5338c805f5a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42_3.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "block_dGAzi3": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        }
+      },
+      "block_order": [
+        "template--20397617152328__5ebddcba-62d0-420d-8bc0-6b88186265f6-block-1",
+        "d84b95b5-8ecb-49b8-95bd-5bf3f3770d34",
+        "0ae0ac7b-da0e-4d2e-8980-9b3aa6bb9f56",
+        "f283b1ed-9b21-4cb6-99d1-bf16df50a328",
+        "9e722ee9-aada-47e8-8af3-32ddc77e6b7f",
+        "921f00f7-1c20-4d98-9af3-c5338c805f5a",
+        "block_dGAzi3"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading_text": "NEW ARRIVALS",
+        "enable_slider": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "fk-btn-color": "#000000"
+      }
+    },
+    "963fdbc0-7863-47df-8da7-2d7d8603a446": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20397617152328__963fdbc0-7863-47df-8da7-2d7d8603a446-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image_banner_link": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_4151.jpg",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "separator_line": false,
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "shopify:\/\/pages\/contact",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-a842edd9-2330-48fc-805d-9d0861130af4",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--20397617152328__963fdbc0-7863-47df-8da7-2d7d8603a446-slide-1"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "ambient",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 22,
+        "padding_bottom": 0
+      }
+    },
+    "bmg_brands_section_KNWq4c": {
+      "type": "bmg-brands-section",
+      "blocks": {
+        "block_z3a3fi": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43.svg",
+            "image_link": "",
+            "image_text": "A-Z BRANDS"
+          }
+        },
+        "block_HBBPQ3": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_2.svg",
+            "image_link": "",
+            "image_text": "COLVIN"
+          }
+        },
+        "block_if9WfL": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_4.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "block_MYLYm3": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_1.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "block_VmiFPm": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_3.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "block_EHGWPL": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4239.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "block_hqe4Ed": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_42.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        }
+      },
+      "block_order": [
+        "block_z3a3fi",
+        "block_HBBPQ3",
+        "block_if9WfL",
+        "block_MYLYm3",
+        "block_VmiFPm",
+        "block_EHGWPL",
+        "block_hqe4Ed"
+      ],
+      "settings": {
+        "heading_text": "NEW ARRIVALS",
+        "enable_slider": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "fk-btn-color": "#000000"
+      }
+    },
+    "9ec4f445-bace-49ad-bfec-d1baee7afcb7": {
+      "type": "image-text",
+      "blocks": {
+        "template--20397617152328__9ec4f445-bace-49ad-bfec-d1baee7afcb7-block-1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "819e0113-7508-4ebc-9329-c8b1d40dd976": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_2.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "9c1524b3-9471-49d6-a217-70ce0338c243": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_3.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "a331081f-f007-4ff5-9a94-6dc8fdf7f474": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_1.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "e6fbb586-e2dc-4057-a859-a55cd77932a3": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_4.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "f550aa8a-7dc4-408b-9633-cb43b8196bbf": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4239.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "cf705abc-85e1-42d3-abfb-89da578740ca": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_4.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        }
+      },
+      "block_order": [
+        "template--20397617152328__9ec4f445-bace-49ad-bfec-d1baee7afcb7-block-1",
+        "819e0113-7508-4ebc-9329-c8b1d40dd976",
+        "9c1524b3-9471-49d6-a217-70ce0338c243",
+        "a331081f-f007-4ff5-9a94-6dc8fdf7f474",
+        "e6fbb586-e2dc-4057-a859-a55cd77932a3",
+        "f550aa8a-7dc4-408b-9633-cb43b8196bbf",
+        "cf705abc-85e1-42d3-abfb-89da578740ca"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading_text": "NEW ARRIVALS",
+        "enable_slider": false,
+        "padding_top": 24,
+        "padding_bottom": 36,
+        "fk-btn-color": "#000000"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "YOU MAY ALSO LIKE",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "fk-btn-color": "#1d5192",
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "b04dea45-a172-4244-bace-a5abb26db729": {
+      "type": "shop-by-category",
+      "blocks": {
+        "65392d5a-ae18-410f-ae93-d415032872b5": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166_1.jpg",
+            "category_text": "TROUSERS",
+            "category_link": ""
+          }
+        },
+        "f6cba72b-161c-4b5f-9375-53f8c90798c6": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166_2.jpg",
+            "category_text": "WINTER",
+            "category_link": ""
+          }
+        },
+        "dd2a4af0-7901-42ac-8296-1925f707d4e9": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166_3.jpg",
+            "category_text": "FLEECE",
+            "category_link": ""
+          }
+        },
+        "dee652be-5831-466f-9a92-2510e96ba808": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166.jpg",
+            "category_text": "JACKETS",
+            "category_link": ""
+          }
+        },
+        "91c23374-0691-4578-8d22-1a6bd54b7c32": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166_1.jpg",
+            "category_text": "GILETS",
+            "category_link": ""
+          }
+        },
+        "33fc21bc-826c-4c77-b323-aaf9874c351b": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166_3.jpg",
+            "category_text": "HOODIES",
+            "category_link": "shopify:\/\/collections\/mens-hoodies"
+          }
+        },
+        "e17e3341-f2a1-4e32-b666-42a3309c5fad": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166_2.jpg",
+            "category_text": "SHIRTS",
+            "category_link": "shopify:\/\/collections\/mens-shirts"
+          }
+        },
+        "e0090a85-7219-4e5f-be59-818bba3a69db": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166.jpg",
+            "category_text": "SWEATSHIRTS",
+            "category_link": "shopify:\/\/collections\/mens-sweatshirts"
+          }
+        },
+        "9c2e7263-f354-47e8-ab37-30c6d0ecbc2e": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166_3.jpg",
+            "category_text": "T-SHIRTS 2",
+            "category_link": "shopify:\/\/collections\/mens-t-shirts"
+          }
+        }
+      },
+      "block_order": [
+        "65392d5a-ae18-410f-ae93-d415032872b5",
+        "f6cba72b-161c-4b5f-9375-53f8c90798c6",
+        "dd2a4af0-7901-42ac-8296-1925f707d4e9",
+        "dee652be-5831-466f-9a92-2510e96ba808",
+        "91c23374-0691-4578-8d22-1a6bd54b7c32",
+        "33fc21bc-826c-4c77-b323-aaf9874c351b",
+        "e17e3341-f2a1-4e32-b666-42a3309c5fad",
+        "e0090a85-7219-4e5f-be59-818bba3a69db",
+        "9c2e7263-f354-47e8-ab37-30c6d0ecbc2e"
+      ],
+      "settings": {
+        "category_heading": "",
+        "view_all_link": "",
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "button-bg-color": "#363757",
+        "fk-btn-color": "#1d5192"
+      }
+    },
+    "4cb0cfe3-2746-429f-875f-5b7b8a2a317c": {
+      "type": "custom-featured-blog-section",
+      "disabled": true,
+      "settings": {
+        "blog_heading": "",
+        "blog": "news",
+        "article_limit": 2
+      }
+    },
+    "be8a9b43-13f1-4a53-be92-fca258a344d7": {
+      "type": "usp-section",
+      "blocks": {
+        "18424047-d5ae-4aa1-b25a-77120847d5e0": {
+          "type": "block",
+          "settings": {
+            "usp_image": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"108\" height=\"64\" viewbox=\"0 0 108 64\" fill=\"none\">\n  <path d=\"M31.6872 52.6334H23.2978C22.1411 52.6334 21.203 51.6969 21.203 50.5454C21.203 49.3938 22.1436 48.4573 23.2978 48.4573H31.6872C32.8439 48.4573 33.7845 49.3938 33.7845 50.5454C33.7845 51.6969 32.8439 52.6334 31.6872 52.6334ZM99.8367 52.6334H94.5921C93.4354 52.6334 92.4973 51.6969 92.4973 50.5454C92.4973 49.3938 93.4379 48.4573 94.5921 48.4573H98.0953L100.922 33.4616C100.884 25.7878 94.2997 19.2327 86.2053 19.2327H72.4366L65.7657 48.4573H77.8159C78.9752 48.4573 79.9158 49.3938 79.9158 50.5454C79.9158 51.6969 78.9752 52.6334 77.8185 52.6334H63.1396C62.5041 52.6334 61.899 52.3448 61.4999 51.8488C61.1008 51.3552 60.9508 50.7048 61.0931 50.0847L68.7198 16.684C68.9359 15.7299 69.7825 15.0566 70.7638 15.0566H86.2053C96.6106 15.0566 105.079 23.4846 105.079 33.8437L101.893 50.9275C101.71 51.9196 100.849 52.6334 99.8367 52.6334Z\" fill=\"#363757\"><\/path>\n  <path d=\"M40.0728 60.9819C34.2943 60.9819 29.5886 56.2997 29.5886 50.5444C29.5886 44.7865 34.2918 40.1068 40.0728 40.1068C45.8513 40.1068 50.557 44.7891 50.557 50.5444C50.557 56.3023 45.8538 60.9819 40.0728 60.9819ZM40.0728 44.2803C36.6052 44.2803 33.7833 47.0897 33.7833 50.5444C33.7833 53.9966 36.6052 56.8059 40.0728 56.8059C43.5404 56.8059 46.3623 53.9966 46.3623 50.5444C46.3623 47.0922 43.5404 44.2803 40.0728 44.2803ZM31.686 15.0557H14.9098C13.7531 15.0557 12.8125 14.1192 12.8125 12.9677C12.8125 11.8161 13.7531 10.8796 14.9098 10.8796H31.686C32.8427 10.8796 33.7833 11.8161 33.7833 12.9677C33.7833 14.1192 32.8427 15.0557 31.686 15.0557ZM31.686 27.5813H10.7151C9.55842 27.5813 8.62034 26.6448 8.62034 25.4932C8.62034 24.3417 9.56096 23.4052 10.7151 23.4052H31.686C32.8427 23.4052 33.7833 24.3417 33.7833 25.4932C33.7833 26.6448 32.8427 27.5813 31.686 27.5813ZM31.686 40.1068H6.523C5.36628 40.1068 4.42566 39.1704 4.42566 38.0188C4.42566 36.8672 5.36628 35.9308 6.523 35.9308H31.686C32.8427 35.9308 33.7833 36.8672 33.7833 38.0188C33.7833 39.1704 32.8427 40.1068 31.686 40.1068Z\" fill=\"#363757\"><\/path>\n  <path d=\"M63.1396 52.6336H48.4608C47.3041 52.6336 46.3635 51.6971 46.3635 50.5455C46.3635 49.394 47.3041 48.4575 48.4608 48.4575H61.4668L70.9951 6.70729H23.2978C22.1411 6.70729 21.203 5.77084 21.203 4.61927C21.203 3.46769 22.1436 2.53125 23.2978 2.53125H73.6263C74.2619 2.53125 74.8669 2.81978 75.2661 3.31584C75.6652 3.80937 75.8152 4.45982 75.6728 5.07737L65.1861 51.0036C64.9675 51.9603 64.1184 52.6336 63.1396 52.6336ZM86.2053 60.9831C80.4268 60.9831 75.7211 56.3009 75.7211 50.5455C75.7211 44.7877 80.4242 40.108 86.2053 40.108C91.9838 40.108 96.6894 44.7902 96.6894 50.5455C96.6894 56.3034 91.9863 60.9831 86.2053 60.9831ZM86.2053 44.2815C82.7377 44.2815 79.9158 47.0908 79.9158 50.5455C79.9158 53.9977 82.7377 56.8071 86.2053 56.8071C89.6729 56.8071 92.4973 53.9977 92.4973 50.5455C92.4973 47.0934 89.6754 44.2815 86.2053 44.2815Z\" fill=\"#363757\"><\/path>\n<\/svg>",
+            "usp_text": "FAST SHIPPING",
+            "usp_link": "shopify:\/\/pages\/shipping-delivery"
+          }
+        },
+        "60184257-8c7f-4aa4-9c47-2425d3ad8804": {
+          "type": "block",
+          "settings": {
+            "usp_image": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"77\" height=\"54\" viewbox=\"0 0 77 54\" fill=\"none\">\n  <path d=\"M74.9957 0.803724H22.8941C22.4965 0.803724 22.1151 0.961684 21.8339 1.24286C21.5528 1.52403 21.3948 1.90538 21.3948 2.30303V51.7985C21.3948 52.1962 21.5528 52.5775 21.8339 52.8587C22.1151 53.1399 22.4965 53.2979 22.8941 53.2979H74.9957C75.3933 53.2979 75.7747 53.1399 76.0558 52.8587C76.337 52.5775 76.495 52.1962 76.495 51.7985V2.30303C76.495 1.90538 76.337 1.52403 76.0558 1.24286C75.7747 0.961687 75.3933 0.803724 74.9957 0.803724ZM40.0239 3.79255L57.8659 3.80028V16.4243H40.0239V3.79255ZM73.4865 50.2992H24.3954V3.80037H37.0273V17.9315C37.0273 18.3292 37.1852 18.7105 37.4664 18.9917C37.7476 19.2729 38.1289 19.4308 38.5266 19.4308H59.3672C59.7649 19.4308 60.1462 19.2729 60.4274 18.9917C60.7085 18.7105 60.8665 18.3292 60.8665 17.9315V3.80037H73.4983L73.4865 50.2992Z\" fill=\"#363757\" stroke=\"#363757\" stroke-width=\"0.392552\"><\/path>\n  <path d=\"M12.8276 20.5379V22.4796L18.455 19.2369L12.8276 15.9941V17.9358H2.05531C1.88006 17.929 1.70523 17.9576 1.5413 18.02C1.37737 18.0823 1.22772 18.1771 1.1013 18.2987C0.974894 18.4203 0.874322 18.5661 0.805628 18.7275C0.736935 18.8889 0.701538 19.0625 0.701538 19.2379C0.701538 19.4132 0.736935 19.5869 0.805628 19.7482C0.874322 19.9096 0.974894 20.0554 1.1013 20.177C1.22772 20.2986 1.37737 20.3934 1.5413 20.4558C1.70523 20.5181 1.88006 20.5468 2.05531 20.5399L12.8276 20.5379Z\" fill=\"#363757\"><\/path>\n  <path d=\"M17.6858 33.5638H6.9135V31.6221L1.28613 34.8649L6.9135 38.1076V36.1659H17.6858C18.0314 36.1659 18.3628 36.0286 18.6072 35.7842C18.8515 35.5399 18.9888 35.2084 18.9888 34.8629C18.9888 34.5173 18.8515 34.1858 18.6072 33.9414C18.3628 33.6971 18.0314 33.5598 17.6858 33.5598V33.5638Z\" fill=\"#363757\"><\/path>\n<\/svg>",
+            "usp_text": "EASY RETURNS",
+            "usp_link": "shopify:\/\/pages\/returns-refunds"
+          }
+        },
+        "dc52e20b-3975-4670-adff-008ba978f376": {
+          "type": "block",
+          "settings": {
+            "usp_image": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"55\" height=\"67\" viewbox=\"0 0 55 67\" fill=\"none\">\n  <path d=\"M22.2789 40.3261C22.4086 40.4562 22.5628 40.5594 22.7324 40.6299C22.9021 40.7003 23.0839 40.7365 23.2676 40.7365C23.4513 40.7365 23.6332 40.7003 23.8028 40.6299C23.9725 40.5594 24.1265 40.4562 24.2562 40.3261L37.949 26.6334C38.2112 26.3712 38.3585 26.0156 38.3585 25.6447C38.3585 25.2739 38.2112 24.9183 37.949 24.6561C37.6868 24.3939 37.3312 24.2466 36.9604 24.2466C36.5895 24.2466 36.2339 24.3939 35.9717 24.6561L23.2676 37.3621L19.0283 33.1228C18.7661 32.8606 18.4105 32.7133 18.0397 32.7133C17.6689 32.7133 17.3132 32.8606 17.051 33.1228C16.7888 33.385 16.6415 33.7407 16.6415 34.1115C16.6415 34.4823 16.7888 34.8379 17.051 35.1001L22.2789 40.3261Z\" fill=\"#363757\"><\/path>\n  <path d=\"M27.2004 65.0662C27.3932 65.1282 27.6007 65.1282 27.7936 65.0662C28.8593 64.7222 53.8839 56.4175 53.8839 38.7248V10.228C53.8836 9.98259 53.7905 9.74634 53.6232 9.56665C53.456 9.38697 53.2271 9.27713 52.9823 9.25917C45.3578 8.70751 35.6395 7.29573 28.1099 1.21556C27.9372 1.07608 27.7219 1 27.4999 1C27.2779 1 27.0627 1.07608 26.8899 1.21556C19.3604 7.29375 9.64206 8.70751 2.01763 9.25917C1.77283 9.27713 1.54386 9.38697 1.37664 9.56665C1.20943 9.74634 1.11631 9.98259 1.11597 10.228V38.7248C1.11597 56.4175 26.1425 64.7222 27.2162 65.0662H27.2004ZM3.05768 11.1297C10.6149 10.5246 19.9497 8.99027 27.4989 3.21065C35.0482 8.99027 44.383 10.5266 51.9402 11.1317V38.7267C51.9402 54.023 30.3107 62.128 27.495 63.1166C24.6793 62.128 3.04978 54.0211 3.04978 38.7267L3.05768 11.1297Z\" fill=\"#363757\" stroke=\"#363757\" stroke-width=\"1.97729\"><\/path>\n<\/svg>",
+            "usp_text": "SATISFACTION GUARANTEE",
+            "usp_link": "shopify:\/\/pages\/about-us"
+          }
+        },
+        "86f70eeb-308d-47f2-be42-3b7a3af9524d": {
+          "type": "block",
+          "settings": {
+            "usp_image": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"78\" height=\"48\" viewbox=\"0 0 78 48\" fill=\"none\">\n  <path d=\"M76.9463 15.1925C14.025 1.33765 44.9281 8.16522 12.8367 1.03116C12.7207 1.00007 12.5998 0.99215 12.4808 1.00782C12.3618 1.0235 12.247 1.06247 12.1431 1.12252C12.0392 1.18257 11.9481 1.26251 11.8751 1.35778C11.802 1.45305 11.7485 1.56177 11.7175 1.67774L7.6186 12.9859H1.96355C1.72128 12.9859 1.48892 13.0821 1.31761 13.2534C1.14629 13.4247 1.05005 13.6571 1.05005 13.8994V46.3052C1.05005 46.5474 1.14629 46.7798 1.31761 46.9511C1.48892 47.1224 1.72128 47.2187 1.96355 47.2187H67.9556C67.9556 47.2187 77.1559 15.3131 76.9463 15.1925ZM13.246 3.03218C14.5668 3.38612 44.0324 9.73717 63.1231 13.9073C62.7276 13.8262 64.0465 13.4921 64.8038 13.6483C64.8038 13.6483 31.961 13.0175 9.50889 12.9938L13.246 3.03218ZM67.0619 45.3917H2.87706V14.8109H67.0619V45.3917ZM68.8889 15.1945L75.1094 16.4165L68.8889 39.3728V15.1945Z\" fill=\"#363757\" stroke=\"#363757\" stroke-width=\"0.988645\"><\/path>\n  <path d=\"M8.36371 36.9186C9.15489 36.9191 9.9135 37.2337 10.4729 37.7931C11.0324 38.3526 11.3469 39.1112 11.3474 39.9023C11.3474 40.1446 11.4437 40.377 11.615 40.5483C11.7863 40.7196 12.0187 40.8159 12.2609 40.8159H57.6773C57.9196 40.8159 58.1519 40.7196 58.3233 40.5483C58.4946 40.377 58.5908 40.1446 58.5908 39.9023C58.5913 39.1125 58.9048 38.3551 59.4625 37.7959C60.0202 37.2367 60.7768 36.9212 61.5666 36.9186C61.8089 36.9186 62.0413 36.8224 62.2126 36.651C62.3839 36.4797 62.4802 36.2474 62.4802 36.0051V24.1947C62.4802 23.9525 62.3839 23.7201 62.2126 23.5488C62.0413 23.3775 61.8089 23.2812 61.5666 23.2812C60.7755 23.2807 60.0169 22.9662 59.4574 22.4067C58.898 21.8473 58.5834 21.0887 58.5829 20.2975C58.5829 20.0552 58.4867 19.8229 58.3153 19.6516C58.144 19.4803 57.9117 19.384 57.6694 19.384H12.2609C12.0187 19.384 11.7863 19.4803 11.615 19.6516C11.4437 19.8229 11.3474 20.0552 11.3474 20.2975C11.3469 21.0887 11.0324 21.8473 10.4729 22.4067C9.9135 22.9662 9.15489 23.2807 8.36371 23.2812C8.12144 23.2812 7.88907 23.3775 7.71775 23.5488C7.54644 23.7201 7.4502 23.9525 7.4502 24.1947V36.0051C7.45072 36.247 7.54719 36.4789 7.71845 36.6498C7.88971 36.8207 8.12178 36.9186 8.36371 36.9186ZM9.2772 25.0213C10.2194 24.8375 11.0854 24.3767 11.7641 23.6979C12.4429 23.0192 12.9037 22.1532 13.0874 21.211H56.8528C57.0365 22.1532 57.4973 23.0192 58.1761 23.6979C58.8549 24.3767 59.7208 24.8375 60.663 25.0213V35.1786C59.7208 35.3623 58.8549 35.8231 58.1761 36.5019C57.4973 37.1807 57.0365 38.0466 56.8528 38.9888H13.0874C12.9037 38.0466 12.4429 37.1807 11.7641 36.5019C11.0854 35.8231 10.2194 35.3623 9.2772 35.1786V25.0213Z\" fill=\"#363757\" stroke=\"#363757\" stroke-width=\"0.988645\"><\/path>\n  <path d=\"M34.969 35.6141C36.0597 35.6141 37.1259 35.2906 38.0328 34.6847C38.9397 34.0787 39.6465 33.2174 40.0639 32.2097C40.4813 31.2021 40.5905 30.0932 40.3777 29.0235C40.1649 27.9538 39.6397 26.9711 38.8685 26.1999C38.0973 25.4287 37.1146 24.9035 36.0448 24.6907C34.9751 24.4779 33.8663 24.5871 32.8587 25.0045C31.851 25.4219 30.9897 26.1287 30.3837 27.0356C29.7778 27.9425 29.4543 29.0087 29.4543 30.0994C29.4559 31.5615 30.0374 32.9632 31.0713 33.9971C32.1051 35.0309 33.5069 35.6125 34.969 35.6141ZM34.969 26.4117C35.6984 26.4117 36.4113 26.628 37.0177 27.0332C37.6242 27.4384 38.0969 28.0143 38.376 28.6882C38.6551 29.362 38.7281 30.1035 38.5858 30.8188C38.4435 31.5341 38.0923 32.1912 37.5766 32.707C37.0608 33.2227 36.4038 33.5739 35.6885 33.7162C34.9731 33.8585 34.2316 33.7854 33.5578 33.5063C32.884 33.2272 32.3081 32.7546 31.9028 32.1481C31.4976 31.5417 31.2814 30.8287 31.2814 30.0994C31.2824 29.1217 31.6713 28.1843 32.3626 27.493C33.0539 26.8016 33.9913 26.4128 34.969 26.4117Z\" fill=\"#363757\" stroke=\"#363757\" stroke-width=\"0.988645\"><\/path>\n<\/svg>",
+            "usp_text": "CUSTOMER CARE",
+            "usp_link": "shopify:\/\/pages\/contact-us"
+          }
+        }
+      },
+      "block_order": [
+        "18424047-d5ae-4aa1-b25a-77120847d5e0",
+        "60184257-8c7f-4aa4-9c47-2425d3ad8804",
+        "dc52e20b-3975-4670-adff-008ba978f376",
+        "86f70eeb-308d-47f2-be42-3b7a3af9524d"
+      ],
+      "settings": {
+        "usp_heading": ""
+      }
+    }
+  },
+  "order": [
+    "857e5c29-9978-406f-a4d7-24c2efbe0e39",
+    "1c453e78-2e19-49a7-81db-6133e38c1a22",
+    "bmg_brands_section_8mnN9e",
+    "5ebddcba-62d0-420d-8bc0-6b88186265f6",
+    "963fdbc0-7863-47df-8da7-2d7d8603a446",
+    "bmg_brands_section_KNWq4c",
+    "9ec4f445-bace-49ad-bfec-d1baee7afcb7",
+    "featured_collection",
+    "b04dea45-a172-4244-bace-a5abb26db729",
+    "4cb0cfe3-2746-429f-875f-5b7b8a2a317c",
+    "be8a9b43-13f1-4a53-be92-fca258a344d7"
+  ]
+}

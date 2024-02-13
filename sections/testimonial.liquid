@@ -1,0 +1,149 @@
+{{ 'testimonial.css' | asset_url | stylesheet_tag }}
+<div class="testimonial-section custom-flickity-arrows testimonial-section--{{ section.id }}">
+  <div class="page-width">
+    <div class="testimonial-section__main testimonial-section__main--{{ section.id }}">
+      <div class="testimonial-heading__container">
+        {%- if section.settings.testimonial_heading != blank -%}
+            <div class="testimonial-heading subtitle-text tm-blue-color">
+                {{ section.settings.testimonial_heading }}
+            </div> 
+        {%- endif -%}
+        {%- if section.settings.view_all_link != blank -%}
+            <a class="category-viewall--link text-body" href="{{ section.settings.view_all_link }}"> 
+                <span>VIEW ALL</span>
+            </a>
+        {%- endif -%}
+      </div>
+      <div class="testimonial-main__container">
+        {%- if section.blocks.size > 0 -%}
+          <div class="testimonial-main__flex">
+            {%- for block in section.blocks -%}
+                <div class="testimonial-block__content">
+                    {%- if block.settings.testimonial_image != blank -%}
+                        <div class="testimonial-image">
+                            <img srcset="{{ block.settings.testimonial_image | image_url: width: block.settings.image_width }}"
+                            src="{{ block.settings.testimonial_image | image_url: width: 760 }}"
+                            alt="{{ block.settings.testimonial_image.alt | escape }}"
+                            loading="lazy"
+                            width="{{ block.settings.testimonial_image.width }}"
+                            height="{{ block.settings.testimonial_image.height }}">
+                        </div>
+                    {%- endif -%}
+                    {%- if block.settings.review_text != blank -%}
+                        <div class="testimonial-content">
+                            <div class="testimonial-review__container">
+                                <div class="testimonial-review__text subtitle-text">
+                                    {{ block.settings.review_text }}
+                                </div>
+                                <div class="testimonial-review__star">
+                                    {%- assign total_stars = 5 -%}
+                                    {%- assign filled_stars = block.settings.review_stars | plus: 0 -%}
+                                    {%- assign empty_stars = total_stars | minus: filled_stars -%}
+                                    {%- for i in (1..total_stars) -%}
+                                        {%- if i <= filled_stars -%}
+                                            {%- render 'icon-yellow-star' -%}
+                                        {%- else -%}
+                                            {%- render 'icon-grey-star' -%}
+                                        {%- endif -%}
+                                    {%- endfor -%}
+                                </div>
+                            </div>
+                            {%- if block.settings.author_name != blank -%}
+                                <div class="testimonial-review__author h3">
+                                    <span>{% render 'icon-dash' %}</span>
+                                    <span>{{ block.settings.author_name }}</span>
+                                </div>
+                            {%- endif -%}
+                            <div class="testimonial-overlay__container"></div>
+                        </div>
+                        
+                    {%- endif -%}
+                </div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div> 
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Testimonial",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Testimonial"
+      },
+      {
+        "type": "text",
+        "id": "testimonial_heading",
+        "label": "Heading"
+      },
+      {
+        "type": "url",
+        "id": "view_all_link",
+        "label": "View All"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Block",
+        "type": "block",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "testimonial_image",
+            "label": "Testimonial Image",
+            "info": "Dimension (610x500)px"
+          },
+          {
+            "type": "text",
+            "id": "author_name",
+            "label": "User Name"
+          },
+          {
+            "type": "textarea",
+            "id": "review_text",
+            "label": "User Review"
+          },
+          {
+            "type": "select",
+            "id": "review_stars",
+            "label": "Star rating",
+            "options": [
+              {
+                "value": "1",
+                "label": "1"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "5",
+                "label": "5"
+              }
+            ],
+            "default": "4"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Testimonial"
+      }
+    ]
+  }
+{% endschema %}
+

@@ -1,0 +1,88 @@
+<div class="popup-wrapper"> 
+    <div class="popup-inner">
+        <div class="popup-heading__wrap flex-space-center">
+            <div class="popup-heading__inner">
+                <div class="size-heading text-body active pntr">SIZE GUIDE</div>
+                <div class="measure-heading text-body pntr">MEASURING GUIDE</div>
+            </div>
+            <div class="popup-close-btn pntr">{% render 'icon-cross' %}</div>
+
+        </div>
+        <div class="popup-main__wrap">
+            <div class="popup-main__inner size-content active">
+                <div class="popup-main__top flex-space-center">
+                    <div class="size-chart__text text-body">Size Chart</div>
+                    <div class="toggle-switch flex-center-center">
+                        <span>in</span>
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-switch-checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <span>cms</span>
+                    </div>
+                </div>
+                <div class="popup-main__middle">
+                    <div class="popup-main__image-container">
+                        {% if settings.size_in_image %}
+                            <img srcset="{{ settings.size_in_image | image_url: width: settings.image_width }}, {{ settings.size_in_image | image_url: width: image_size_2x }} 2x"
+                                src="{{ settings.size_in_image | image_url: width: 760 }}"
+                                alt="{{ settings.size_in_image.alt | escape }}"
+                                loading="lazy"
+                                class="size-in-image"
+                                width="{{ settings.size_in_image.width }}"
+                                height="{{ settings.size_in_image.height }}">
+                        {% endif %}
+                        {% if settings.size_cm_image %}
+                            <img srcset="{{ settings.size_cm_image | image_url: width: settings.image_width }}, {{ settings.size_cm_image | image_url: width: image_size_2x }} 2x"
+                                src="{{ settings.size_cm_image | image_url: width: 760 }}"
+                                alt="{{ settings.size_cm_image.alt | escape }}"
+                                loading="lazy"
+                                class="size-cm-image"
+                                width="{{ settings.size_cm_image.width }}"
+                                height="{{ settings.size_cm_image.height }}">
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="popup-main__bottom">
+                    {% if settings.size_contact_content != blank %}
+                      <div class="popup-main__bottom-top">
+                          <span>{% render 'whatsapp-icon' %}</span>
+                          <span class="size-contact-content caption-text">{{ settings.size_contact_content | replace: '[', '<span>' | replace: ']', '</span>' }}</span>
+                      </div>
+                    {% endif %}
+                    <div class="popup-main__bottom-bottom caption-text">
+                        {{ settings.size_text_content }}
+                    </div>
+                </div>
+            </div>
+            <div class="popup-main__inner measure-content">
+                <div class="measure-inner flex-center-center">
+                    {% if settings.measure_men_image %}
+                        <div class="measure-men__image">
+                            <img srcset="{{ settings.measure_men_image | image_url: width: settings.image_width }}, {{ settings.measure_men_image | image_url: width: image_size_2x }} 2x"
+                                src="{{ settings.measure_men_image | image_url: width: 760 }}"
+                                alt="{{ settings.measure_men_image.alt | escape }}"
+                                loading="lazy"
+                                class="size-in-image"
+                                width="{{ settings.measure_men_image.width }}"
+                                height="{{ settings.measure_men_image.height }}">
+                        </div>
+                    {% endif %}
+                    {% if settings.measure_women_image %}
+                        <div class="measure-women__image">
+                            <img srcset="{{ settings.measure_women_image | image_url: width: settings.image_width }}, {{ settings.measure_women_image | image_url: width: image_size_2x }} 2x"
+                                src="{{ settings.measure_women_image | image_url: width: 760 }}"
+                                alt="{{ settings.measure_women_image.alt | escape }}"
+                                loading="lazy"
+                                class="size-in-image"
+                                width="{{ settings.measure_women_image.width }}"
+                                height="{{ settings.measure_women_image.height }}">
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</div>

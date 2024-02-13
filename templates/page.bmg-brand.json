@@ -1,0 +1,381 @@
+{
+  "layout": "theme.brand",
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "3b8f5a7c-1736-44f1-a176-048ef9302fef": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20460266553672__3b8f5a7c-1736-44f1-a176-048ef9302fef-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image_banner_link": "",
+            "image": "shopify:\/\/shop_images\/image_20.jpg",
+            "heading": "Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Amet Dolor Sit.",
+            "heading_size": "h1",
+            "separator_line": false,
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-9f9449a3-e82b-43d5-aace-183e10c3ba44",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--20460266553672__3b8f5a7c-1736-44f1-a176-048ef9302fef-slide-1"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 24,
+        "padding_bottom": 20
+      }
+    },
+    "11aa78b0-3bfd-4368-b6a7-ce3114e864fc": {
+      "type": "new-multi-image-banner",
+      "blocks": {
+        "template--20460266553672__11aa78b0-3bfd-4368-b6a7-ce3114e864fc-block-1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4216_3.jpg",
+            "image_banner_link": "",
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "f27fbd71-eee3-4a16-b827-1a36d7ff71f8": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4217_2.jpg",
+            "image_banner_link": "",
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "5e3a936a-eca6-41a3-a3e0-28dc744ba4e8": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4214_3.jpg",
+            "image_banner_link": "",
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20460266553672__11aa78b0-3bfd-4368-b6a7-ce3114e864fc-block-1",
+        "f27fbd71-eee3-4a16-b827-1a36d7ff71f8",
+        "5e3a936a-eca6-41a3-a3e0-28dc744ba4e8"
+      ],
+      "settings": {
+        "heading_text": "NEW ARRIVALS",
+        "flex_banners_number": "three",
+        "image_overlay_opacity": 0,
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "8acbc483-9dfc-4fb0-b93b-95c7bcb1d45f": {
+      "type": "image-text",
+      "blocks": {
+        "template--20460266553672__8acbc483-9dfc-4fb0-b93b-95c7bcb1d45f-block-1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "b8d63bc7-4947-425f-b9dc-1c8c9daf127a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_2.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "f5433153-ed28-4ca0-930f-bfcdf077e706": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_4.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "75a02d36-2d2e-4d26-b5af-1491ea600768": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_1.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "ef1bde4e-fa16-4d7b-bee3-7d7bf40881de": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_3.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "009cd979-c76e-4091-b66c-605c9658504a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "6dfa5302-49ba-4ee5-b528-f0839e4d887a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_2.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        }
+      },
+      "block_order": [
+        "template--20460266553672__8acbc483-9dfc-4fb0-b93b-95c7bcb1d45f-block-1",
+        "b8d63bc7-4947-425f-b9dc-1c8c9daf127a",
+        "f5433153-ed28-4ca0-930f-bfcdf077e706",
+        "75a02d36-2d2e-4d26-b5af-1491ea600768",
+        "ef1bde4e-fa16-4d7b-bee3-7d7bf40881de",
+        "009cd979-c76e-4091-b66c-605c9658504a",
+        "6dfa5302-49ba-4ee5-b528-f0839e4d887a"
+      ],
+      "settings": {
+        "heading_text": "NEW ARRIVALS",
+        "enable_slider": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "fk-btn-color": "#000000"
+      }
+    },
+    "9f6d5eeb-4912-4f07-aa07-00e7a8268af7": {
+      "type": "shop-by-category",
+      "blocks": {
+        "4e94b0e6-6d1b-430c-903c-80dbace08eb0": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166.jpg",
+            "category_text": "Text",
+            "category_link": ""
+          }
+        },
+        "7c9b3364-fd2a-4e4a-be48-cc2636b72a52": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166_1.jpg",
+            "category_text": "Text",
+            "category_link": ""
+          }
+        },
+        "a47e2d9f-0ca0-4fc2-930f-fbe6403d82d3": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166_2.jpg",
+            "category_text": "Text",
+            "category_link": ""
+          }
+        },
+        "0081a038-cff5-40d2-9e97-47be16a254ab": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166_3.jpg",
+            "category_text": "Text",
+            "category_link": ""
+          }
+        },
+        "082dd960-ffc7-45d5-87e7-ab0e47dfa42a": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/jack2.jpg",
+            "category_text": "Text",
+            "category_link": ""
+          }
+        },
+        "1dea76c5-f78e-4cda-9145-d5e1dc77a5af": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/jack3.jpg",
+            "category_text": "Text",
+            "category_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "4e94b0e6-6d1b-430c-903c-80dbace08eb0",
+        "7c9b3364-fd2a-4e4a-be48-cc2636b72a52",
+        "a47e2d9f-0ca0-4fc2-930f-fbe6403d82d3",
+        "0081a038-cff5-40d2-9e97-47be16a254ab",
+        "082dd960-ffc7-45d5-87e7-ab0e47dfa42a",
+        "1dea76c5-f78e-4cda-9145-d5e1dc77a5af"
+      ],
+      "settings": {
+        "category_heading": "",
+        "view_all_link": "",
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "button-bg-color": "#15284d",
+        "fk-btn-color": "#15284d"
+      }
+    },
+    "ee16316c-d26c-4442-b7df-87829e7dc3c9": {
+      "type": "custom-featured-blog-section",
+      "disabled": true,
+      "settings": {
+        "blog_heading": "Featured",
+        "blog": "news",
+        "article_limit": 4
+      }
+    },
+    "eddbca20-3d9c-4458-ab09-3ff564b99e8e": {
+      "type": "image-text-grid",
+      "blocks": {
+        "2a933ca2-aced-4f83-9430-86941ec8e9c3": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4219.jpg",
+            "title": "<p>US POLO ASSN<\/p>",
+            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry.<\/p>",
+            "link": ""
+          }
+        },
+        "65fccb21-1fc2-421f-92b1-a8f64007d957": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4214.jpg",
+            "title": "<p>US POLO ASSN<\/p>",
+            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry.<\/p>",
+            "link": ""
+          }
+        },
+        "59a06449-f3ed-4d63-87f5-20c77a755167": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4216_9afaa2a2-86a6-4c1f-a58e-8dded830b559.jpg",
+            "title": "<p>US Polo assn<\/p>",
+            "description": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2a933ca2-aced-4f83-9430-86941ec8e9c3",
+        "65fccb21-1fc2-421f-92b1-a8f64007d957",
+        "59a06449-f3ed-4d63-87f5-20c77a755167"
+      ],
+      "settings": {
+        "heading": "FEATURED",
+        "columns_desktop": 2,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "99fae509-7733-416d-9f21-5e7c0ca493d4": {
+      "type": "image-text-grid",
+      "blocks": {
+        "579e7adc-287e-469f-a212-337e611d0fc5": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4239_f0883215-582a-452b-bac1-8c67597e7972.jpg",
+            "title": "<p><strong>Title<\/strong><\/p>",
+            "description": "",
+            "link": ""
+          }
+        },
+        "5f303994-5f14-4865-a546-f741a09983c4": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4238.jpg",
+            "title": "<p><strong>Title<\/strong><\/p>",
+            "description": "",
+            "link": ""
+          }
+        },
+        "3e07a860-854f-46e7-8314-564b50feb2d4": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4237.jpg",
+            "title": "<p><strong>Title<\/strong><\/p>",
+            "description": "",
+            "link": ""
+          }
+        },
+        "290e2577-9078-4506-9bac-8c0db24fc6af": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4166_22a2795f-ecf5-431f-a4c4-029ef66795ba.jpg",
+            "title": "<p><strong>Title<\/strong><\/p>",
+            "description": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "579e7adc-287e-469f-a212-337e611d0fc5",
+        "5f303994-5f14-4865-a546-f741a09983c4",
+        "3e07a860-854f-46e7-8314-564b50feb2d4",
+        "290e2577-9078-4506-9bac-8c0db24fc6af"
+      ],
+      "settings": {
+        "heading": "Featured",
+        "columns_desktop": 4,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3b8f5a7c-1736-44f1-a176-048ef9302fef",
+    "11aa78b0-3bfd-4368-b6a7-ce3114e864fc",
+    "8acbc483-9dfc-4fb0-b93b-95c7bcb1d45f",
+    "9f6d5eeb-4912-4f07-aa07-00e7a8268af7",
+    "ee16316c-d26c-4442-b7df-87829e7dc3c9",
+    "eddbca20-3d9c-4458-ab09-3ff564b99e8e",
+    "99fae509-7733-416d-9f21-5e7c0ca493d4"
+  ]
+}

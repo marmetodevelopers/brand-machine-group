@@ -1,0 +1,253 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "74860609-09a5-4824-9ce9-638892f5c489": {
+      "type": "lookbook",
+      "blocks": {
+        "60abf651-a6fe-4287-9937-a0e31f906ab7": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_4_copy_2_a0d3f604-37db-4997-b983-e8330e82f558.png",
+            "product_1": "penfield-mens-outback-vest-black",
+            "option_1": "color",
+            "value_1": "Black",
+            "product_2": "penfield-mens-badge-sweatshirt-black",
+            "option_2": "color",
+            "value_2": "Black",
+            "product_3": "penfield-mens-ridge-trail-back-graphic-t-shirt-ebony",
+            "option_3": "color",
+            "value_3": "Ebony",
+            "product_4": "",
+            "option_4": "color",
+            "value_4": "",
+            "product_5": "",
+            "option_5": "color",
+            "value_5": ""
+          }
+        },
+        "template--21155063857450__86394eeb-3b93-48e7-9e12-a3c2a7632d96-look-2": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_1_8eaba923-4bab-4d05-b798-6fb6f0ef6046.png",
+            "product_1": "penfield-mens-rockford-primaloft-vest-star-fish",
+            "option_1": "color",
+            "value_1": "Star Fish",
+            "product_2": "penfield-mens-hudson-script-hoodie-in-vintage-grey-heather",
+            "option_2": "color",
+            "value_2": "Vintage Grey Heather",
+            "product_3": "penfield-mens-trail-l-s-t-shirt-black",
+            "option_3": "color",
+            "value_3": "Black",
+            "product_4": "",
+            "option_4": "color",
+            "value_4": "",
+            "product_5": "",
+            "option_5": "color",
+            "value_5": ""
+          }
+        },
+        "template--21155063857450__86394eeb-3b93-48e7-9e12-a3c2a7632d96-look-3": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_3_b5b0c087-92b3-4a0b-98fc-fd4d4f7cb8cc.png",
+            "product_1": "penfield-mens-contrast-bowerbridge-jacket-real-teal",
+            "option_1": "color",
+            "value_1": "Real Teal",
+            "product_2": "penfield-mens-hudson-script-sweatshirt-in-forest-night",
+            "option_2": "color",
+            "value_2": "Forest Night",
+            "product_3": "penfield-mens-yosemite-trail-satellite-l-s-t-shirt-bright-white",
+            "option_3": "color",
+            "value_3": "White",
+            "product_4": "penfield-mens-bowerbridge-jacket-burnt-orange",
+            "option_4": "color",
+            "value_4": "Burnt Orange",
+            "product_5": "penfield-mens-bowerbridge-jacket-navy-blue",
+            "option_5": "color",
+            "value_5": "Navy"
+          }
+        },
+        "template--21155063857450__86394eeb-3b93-48e7-9e12-a3c2a7632d96-look-1": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_1_copy_483d6040-f628-46d5-9d73-d8d8d83c1375.png",
+            "product_1": "penfield-mens-rockford-primaloft-jacket-navy-blue",
+            "option_1": "color",
+            "value_1": "Navy Blue",
+            "product_2": "penfield-mens-rockford-primaloft-jacket-black",
+            "option_2": "color",
+            "value_2": "Black",
+            "product_3": "penfield-fisherman-beanie-navy-blue",
+            "option_3": "color",
+            "value_3": "Navy Blue",
+            "product_4": "",
+            "option_4": "color",
+            "value_4": "",
+            "product_5": "",
+            "option_5": "color",
+            "value_5": ""
+          }
+        },
+        "0572817f-58f4-427d-a9a1-e707689315f6": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_4_copy.png",
+            "product_1": "penfield-mens-kasson-jacket-black",
+            "option_1": "color",
+            "value_1": "Black",
+            "product_2": "penfield-mens-p-bear-sweatshirt-in-vintage-grey-heather",
+            "option_2": "color",
+            "value_2": "Vintage Grey Heather",
+            "product_3": "penfield-mens-kasson-jacket-laurel-wreath",
+            "option_3": "color",
+            "value_3": "Laurel Wreath",
+            "product_4": "",
+            "option_4": "color",
+            "value_4": "",
+            "product_5": "",
+            "option_5": "color",
+            "value_5": ""
+          }
+        },
+        "1867cf1a-4e15-4be5-b844-e7890eb8a766": {
+          "type": "look",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_4.png",
+            "product_1": "",
+            "option_1": "color",
+            "value_1": "",
+            "product_2": "",
+            "option_2": "color",
+            "value_2": "",
+            "product_3": "",
+            "option_3": "color",
+            "value_3": "",
+            "product_4": "",
+            "option_4": "color",
+            "value_4": "",
+            "product_5": "",
+            "option_5": "color",
+            "value_5": ""
+          }
+        },
+        "ac9435cc-2297-4c37-b0e3-c84f56d73440": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_5_copy.png",
+            "product_1": "penfield-mens-winter-geo-mattawa-jacket-shaved-chocolate",
+            "option_1": "color",
+            "value_1": "Shaved Chocolate",
+            "product_2": "penfield-mens-p-bear-hoodie-in-black",
+            "option_2": "color",
+            "value_2": "Black",
+            "product_3": "",
+            "option_3": "color",
+            "value_3": "",
+            "product_4": "",
+            "option_4": "color",
+            "value_4": "",
+            "product_5": "",
+            "option_5": "color",
+            "value_5": ""
+          }
+        },
+        "b701b33d-f3dd-4051-9679-e9aa14c37436": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_6.png",
+            "product_1": "penfield-mens-mattawa-vest-dragonfly",
+            "option_1": "color",
+            "value_1": "Dragonfly",
+            "product_2": "penfield-mens-large-check-overshirt-in-forest-night",
+            "option_2": "color",
+            "value_2": "Forest Night",
+            "product_3": "penfield-mens-arc-mountain-l-s-t-shirt-vintage-grey-heather",
+            "option_3": "color",
+            "value_3": "Vintage Grey Weather",
+            "product_4": "",
+            "option_4": "color",
+            "value_4": "",
+            "product_5": "",
+            "option_5": "color",
+            "value_5": ""
+          }
+        },
+        "411e808b-02d2-4c58-b2da-efebb774a611": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_5.png",
+            "product_1": "penfield-mens-archive-padded-bomber-jacket-star-fish",
+            "option_1": "color",
+            "value_1": "Star Fish",
+            "product_2": "penfield-bear-reverse-beanie-in-winetasting",
+            "option_2": "color",
+            "value_2": "Winetasting",
+            "product_3": "penfield-mens-bear-ombre-stripe-t-shirt-bright-white",
+            "option_3": "color",
+            "value_3": "Tillandsia Purple",
+            "product_4": "",
+            "option_4": "color",
+            "value_4": "",
+            "product_5": "",
+            "option_5": "color",
+            "value_5": ""
+          }
+        },
+        "9d05b65a-3e96-4916-bd4c-90368a999eb7": {
+          "type": "look",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_6_copy.png",
+            "product_1": "",
+            "option_1": "color",
+            "value_1": "",
+            "product_2": "",
+            "option_2": "color",
+            "value_2": "",
+            "product_3": "",
+            "option_3": "color",
+            "value_3": "",
+            "product_4": "",
+            "option_4": "color",
+            "value_4": "",
+            "product_5": "",
+            "option_5": "color",
+            "value_5": ""
+          }
+        }
+      },
+      "block_order": [
+        "60abf651-a6fe-4287-9937-a0e31f906ab7",
+        "template--21155063857450__86394eeb-3b93-48e7-9e12-a3c2a7632d96-look-2",
+        "template--21155063857450__86394eeb-3b93-48e7-9e12-a3c2a7632d96-look-3",
+        "template--21155063857450__86394eeb-3b93-48e7-9e12-a3c2a7632d96-look-1",
+        "0572817f-58f4-427d-a9a1-e707689315f6",
+        "1867cf1a-4e15-4be5-b844-e7890eb8a766",
+        "ac9435cc-2297-4c37-b0e3-c84f56d73440",
+        "b701b33d-f3dd-4051-9679-e9aa14c37436",
+        "411e808b-02d2-4c58-b2da-efebb774a611",
+        "9d05b65a-3e96-4916-bd4c-90368a999eb7"
+      ],
+      "settings": {
+        "title": "Fall\/Winter 2023 – Men",
+        "heading_size": "h1",
+        "background_style": "primary",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "74860609-09a5-4824-9ce9-638892f5c489"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "136c2e15-4c80-4971-829f-0558810c9f22": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21106922258730__136c2e15-4c80-4971-829f-0558810c9f22-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>If you have any questions about your order or need advice? Reach out via the form below or email us at <a href=\"mailto:customerservice@penfield.com\" title=\"Penfield Customer Care and Support\"><strong>customerservice@penfield.com<\/strong><\/a>.<br\/>Check our <a href=\"https:\/\/www.penfield.com\/pages\/frequently-asked-questions\" title=\"https:\/\/www.penfield.com\/pages\/frequently-asked-questions\"><strong>FAQs<\/strong><\/a> for answers and more information too.<\/h3>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21106922258730__136c2e15-4c80-4971-829f-0558810c9f22-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "136c2e15-4c80-4971-829f-0558810c9f22",
+    "form"
+  ]
+}

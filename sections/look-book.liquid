@@ -1,0 +1,97 @@
+{{ 'look-book.css' | asset_url | stylesheet_tag }}
+<div class="look-book-section look-book-section--{{ section.id }}">
+  <div class="page-width">
+    <div class="look-book-section__main look-book-section__main--{{ section.id }}">
+      <div class="look-book-heading__container">
+        {%- if section.settings.look_book_heading != blank -%}
+            <div class="look-book-heading subtitle-text tm-blue-color">
+                {{ section.settings.look_book_heading }}
+            </div> 
+        {%- endif -%}
+        {%- if section.settings.explore_all_link != blank -%}
+            <a class="category-viewall--link text-body" href="{{ section.settings.explore_all_link }}"> 
+                <span class="tm-blue-color">EXPLORE THE GALLERY </span>
+                <span>{% render 'icon-arrow' %}</span>
+            </a>
+        {%- endif -%}
+      </div>
+      <div class="look-book-main__container">
+        {%- if section.blocks.size > 0 -%}
+          <div class="look-book-main__flex">
+            {%- for block in section.blocks -%}
+              <a class="look-book-block__content image-block--{{ forloop.index }}"  href="{{ block.settings.category_link }}">
+                {%- if block.settings.look_image != blank -%}
+                    <div class="look-book-image">
+                        <img srcset="{{ block.settings.look_image | image_url: width: block.settings.image_width }}, {{ block.settings.look_image | image_url: width: image_size_2x }} 2x"
+                          src="{{ block.settings.look_image | image_url: width: 760 }}"
+                          alt="{{ block.settings.look_image.alt | escape }}"
+                          loading="lazy"
+                          width="{{ block.settings.look_image.width }}"
+                          height="{{ block.settings.look_image.height }}">
+                    </div>
+                    {%- endif -%}
+                    {%- if block.settings.button_link != blank -%}
+                        <div href="{{ block.settings.button_link }}" class="look-book-overlay__button">{{ block.settings.button_text }}</div>
+                {%- endif -%}
+              </a>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div> 
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Look Book",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Look Book"
+      },
+      {
+        "type": "text",
+        "id": "look_book_heading",
+        "label": "Heading"
+      },
+      {
+        "type": "url",
+        "id": "explore_all_link",
+        "label": "View All",
+        "info": "Add link to show View all"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Block",
+        "type": "block",
+        "limit": 4,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "look_image",
+            "label": "Look Book Image",
+            "info": "Dimension Large Image (505x560)px, Small Image(190x270)px"
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Look Book"
+      }
+    ]
+  }
+{% endschema %}
+

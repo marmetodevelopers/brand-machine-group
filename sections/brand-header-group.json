@@ -1,0 +1,130 @@
+{
+  "name": "Brand Header",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "9cd45d18-8e9f-442c-85f1-e78bd082563a": {
+          "type": "announcement",
+          "settings": {
+            "text": "READ ABOUT US",
+            "link": "shopify:\/\/pages\/about-us"
+          }
+        },
+        "76424ae8-993e-4716-adc7-840ced08245a": {
+          "type": "announcement",
+          "settings": {
+            "text": "SIGN UP TO OUR NEWSLETTER",
+            "link": "https:\/\/manage.kmail-lists.com\/subscriptions\/subscribe?a=ULMbzf&g=WK4PNS"
+          }
+        },
+        "56a1a9c1-c3f1-40ce-a624-b45b1e425b37": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE UK SHIPPING OVER £150",
+            "link": "shopify:\/\/pages\/shipping-delivery"
+          }
+        },
+        "6a861aae-be1e-425d-8eb3-0635de9c72f1": {
+          "type": "announcement",
+          "settings": {
+            "text": "USA & EURO SHIPPING NOW AVAILABLE",
+            "link": "shopify:\/\/pages\/shipping-delivery"
+          }
+        },
+        "e772725b-7012-4c33-94ba-a0dba56f6d15": {
+          "type": "announcement",
+          "settings": {
+            "text": "EASY 28 DAYS RETURNS",
+            "link": "shopify:\/\/pages\/returns-refunds"
+          }
+        },
+        "ec103a0f-405a-44e0-8bbe-993b8d818494": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "9cd45d18-8e9f-442c-85f1-e78bd082563a",
+        "76424ae8-993e-4716-adc7-840ced08245a",
+        "56a1a9c1-c3f1-40ce-a624-b45b1e425b37",
+        "6a861aae-be1e-425d-8eb3-0635de9c72f1",
+        "e772725b-7012-4c33-94ba-a0dba56f6d15",
+        "ec103a0f-405a-44e0-8bbe-993b8d818494"
+      ],
+      "settings": {
+        "color_scheme": "scheme-a714b3cd-c394-49cc-9986-492ebf8d2767",
+        "show_line_separator": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "150297dd-c34f-49b3-9ad9-e8eaaac5ae09": {
+          "type": "image_blocks",
+          "settings": {
+            "mega_menu_handle": "COLLECTIONS",
+            "mega_menu_image_link": "shopify:\/\/collections\/outerwear-jackets-vests",
+            "mega_menu_overlay_text": "JACKETS & VESTS"
+          }
+        },
+        "2ab4e6ab-8e35-433b-8fc7-96ffcdc91908": {
+          "type": "image_blocks",
+          "settings": {
+            "mega_menu_handle": "SALE",
+            "mega_menu_image_link": "shopify:\/\/collections\/christmas-sales-upto70off",
+            "mega_menu_overlay_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "150297dd-c34f-49b3-9ad9-e8eaaac5ae09",
+        "2ab4e6ab-8e35-433b-8fc7-96ffcdc91908"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "header_color_mobile": "#121212",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": false,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "accent-2",
+        "enable_country_selector": true,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "14f0ba81-c4cc-4d9f-9e27-a80a471102b2": {
+      "type": "swatches",
+      "blocks": {
+        "1ac9b425-aef8-46e9-b73f-de60dc331680": {
+          "type": "color_swatch",
+          "settings": {
+            "color_swatches_text": "Black:#000 | cobalt blue:#0047AB | eden green: #294036| red: #FF0000 | pansy: #6F5396 | Blue Wing Teal: #2c4053 | Bright Cobalt: #395d8d | Bright White: #f4f9ff | Bungee Cord: #696156 | Burnt Orange: #CC5500 | Castlerock: #5f6367 | Chipmunk: #977252 | Cuban Sand: #c1a68d | Dragonfly: #304a77 | Ebony: #555D50 | Eventide: #959fb7 | Fir: #27352a | Forest Night: #434237 | Haute Red: #a11729 | Laurel Wreath: #616f65 | Mallard Blue: #3a5c6e | Marshmallow: #f9f5ec | Milky Blue: #74a9bd | Molten Lava: #b5332e | Navy Blue: #000080 | Nimbus Cloud: #d5d5d8 | Real Teal: #348F91 | Riviera: #189fac | Rubber: #815b37 | Shaved Chocolate: #553c36 | Silver Birch: #A3A39A | Silver Gray: #c0c0c0 | Star Fish: #f4c84a | Sunflower: #FAE033 | Tillandsia Purple: #563474 | Vallarta Blue: #30658e | Vintage Grey Heather: #9aa297 | Vintage Indigo: #4a556b | Wine Tasting:  #492a34 |"
+          }
+        }
+      },
+      "block_order": [
+        "1ac9b425-aef8-46e9-b73f-de60dc331680"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "14f0ba81-c4cc-4d9f-9e27-a80a471102b2"
+  ]
+}

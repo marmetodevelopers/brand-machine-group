@@ -1,0 +1,525 @@
+{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+<style>
+  .lookbook__block product-form {
+    position: relative;
+    z-index: 9;
+  }
+  .lookbook.products-open .lookbook__image,
+  .lookbook.products-open .lookbook__title{
+    display:none;
+  }
+  .lookbook__wrapper {
+    margin-top: -1rem;
+  }
+  .lookbook__block .card__heading a:after {
+    content: unset;
+  }
+  .lookbook__more-details {
+    margin: 0 auto;
+  }
+  .lookbook__block .card__information{
+    grid-row-start: 1;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+  }
+  .lookbook__block .price,
+  .lookbook__block .product-form__input {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .lookbook__batch.grid {
+    row-gap: 0;
+    margin: 0;
+  }
+  .lookbook__image {
+    padding: 2.5rem 0;
+  }
+  .lookbook__block .product-form__input input[type=radio]+label{
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    padding-left: 2px;
+    padding-bottom: 1px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 0;
+    color: #363757;
+  }
+  .lookbook__block .product-form__input input[type=radio]:checked+label {
+    color: #fff;
+  }
+  .lookbook__image {
+    line-height: 0;
+  }
+  .lookbook__image img{
+    width: 100%;
+    height: auto;
+  }
+  .lookbook__block product-form {
+    padding: 0.8rem;
+  }
+  .lookbook__image {
+    position: relative;
+  }
+  .lookbook-overlay__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: #fff;
+    color: #363757;
+    padding: 8px 10px;
+    line-height: 18px;
+    font-size: 13px;
+  }
+  .lookbook-overlay__button {
+    display: block;
+  }
+  .lookbook__block .price--on-sale .price-item--regular {
+    display: none;
+  }
+  .lookbook__block .price-item.price-item--sale.price-item--last {
+    color: #898989;
+  }
+  .lookbook__block .product-form__input input[type=radio]:checked+label {
+    background-color: #363757;
+  }
+  .lookbook__block .card-information {
+    max-height: unset;
+    min-height: unset;
+    padding-top: 1rem;
+  }
+  .lookbook__block .card__information.center {
+    padding-top: 0;
+  }
+  .lookbook__more-details {
+    margin-top: 0;
+  }
+  @media screen and (min-width: 990px) {
+    .lookbook__more-details {
+      margin-top: 15px;
+    }
+    .lookbook__more-details {
+      margin-top: 15px;
+      position: relative;
+      z-index: 9;
+    }
+    .lookbook-overlay__button {
+      display: none;
+      padding: 12px 15px;
+      line-height: 24px;
+      font-size: 15px;
+    }
+    .lookbook__image:hover .lookbook-overlay__button {
+      display: block;
+    }
+    .lookbook__products {
+      width: calc(200% + var(--grid-desktop-horizontal-spacing));
+    }
+    .lookbook__block:nth-child(even) .lookbook__products {
+      transform: translateX(calc(-50% - (var(--grid-desktop-horizontal-spacing)/2)));
+    }
+    .lookbook__products-header .lookbook__products-title {
+      width: 100%;
+      max-width: 100%;
+    }
+    .lookbook__products-wrapper{
+      justify-content: space-between;
+      column-gap: 40px;
+    }
+    .lookbook__products-wrapper .lookbook__block{
+      width: 30%;
+    }
+    .lookbook__batch.grid {
+      margin-bottom: 10rem;
+    }
+    .lookbook__products-header {
+        padding: 5rem 0;
+    }
+    .lookbook__image {
+      padding: 0;
+    }
+    .lookbook__title {
+      margin-bottom: 5rem;
+    }
+  }
+</style>
+
+<script defer>
+  
+</script>
+
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="lookbook color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+  <div
+    class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+  >
+      <div class="lookbook__title title-wrapper--no-top-margin center">
+        <h1 class="inline-richtext tm-blue-color {{ section.settings.heading_size }}">
+          {{ section.settings.title | default: page.title }}
+        </h1>
+      </div>
+
+    <div class="lookbook__wrapper">
+      {%- for block in section.blocks -%}
+        {%- assign batch = forloop.index | modulo: 2 -%}
+        {%- if batch == 1 -%}<div class="lookbook__batch grid grid--1-col-tablet-down grid--2-col-desktop">{%- endif -%}
+        <look-book class="lookbook__block grid__item">
+          <div class="lookbook__image">
+            {% unless block.settings.image == blank %}
+            {%- liquid
+                assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
+                assign sizes = '100vw'
+                assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                assign loading = 'lazy'
+                if forloop.index0 < 4
+                  assign loading = 'eager'
+                 endif
+            -%}
+             {{  block.settings.image
+              | image_url: width: 3840
+              | image_tag: loading: loading, height: height, sizes: sizes, widths: widths
+             }}
+            {% else %}
+             {{ 'product-1' | placeholder_svg_tag }} 
+            {% endunless %}
+            <div class="lookbook-overlay__button">Shop the Look</div>
+          </div>
+          <div class="lookbook__products hidden">
+            <div class="lookbook__products-header grid grid--1-col">
+              <div class="lookbook__products-close large-up-hide grid__item right">{%- render 'icon-close-2' -%}</div>
+              <div class="lookbook__products-title grid__item center h2 tm-blue-color">Products</div>
+            </div>
+            <div class="lookbook__products-wrapper grid grid--1-col-tablet-down">
+              {%- for index in (1..5) -%}
+                {%- liquid
+                  assign product = 'product_' | append: index
+                  assign option = 'option_' | append: index
+                  assign value = 'value_' | append: index
+                -%}
+                {%- if block.settings[product] != blank -%}
+                  <div class="lookbook__block title-wrapper grid__item">
+                    {% render 'card-lookbook',
+                      card_product: block.settings[product],
+                      media_aspect_ratio: section.settings.image_ratio,
+                      image_shape: section.settings.image_shape,
+                      show_secondary_image: section.settings.show_secondary_image,
+                      show_vendor: section.settings.show_vendor,
+                      show_rating: section.settings.show_rating,
+                      lazy_load: lazy_load,
+                      show_quick_add: section.settings.enable_quick_add,
+                      show_variant_picker: true,
+                      section_id: section.id,
+                      block_id: block.id,
+                      hide_option: block.settings[option],
+                      selected_option_value: block.settings[value],
+                      show_add_to_cart: true,
+                      additional_class: 'lookbook'
+                    %}
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        </look-book>
+        {%- if batch == 0 or forloop.last -%}</div>{%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Lookbook v2.0",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Title goes here",
+      "label": "Title"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    
+    {
+      "type": "select",
+      "id": "background_style",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.multicolumn.settings.background_style.options__1.label"
+        },
+        {
+          "value": "primary",
+          "label": "t:sections.multicolumn.settings.background_style.options__2.label"
+        }
+      ],
+      "default": "primary",
+      "label": "t:sections.multicolumn.settings.background_style.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "look",
+      "name": "Look",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label",
+          "info": "Dimensions (608×742)px"
+        },
+        {
+          "type": "header",
+          "content": "Product 1"
+        },
+        {
+          "type": "product",
+          "id": "product_1",
+          "label": "Product"
+        },
+        {
+          "type": "select",
+          "id": "option_1",
+          "options": [
+            {
+              "value": "color",
+              "label": "Color"
+            },
+            {
+              "value": "size",
+              "label": "Size"
+            }
+          ],
+          "default": "color",
+          "label": "Option"
+        },
+        {
+          "type": "text",
+          "id": "value_1",
+          "label": "Option value",
+          "info": "Enter the deafult option value"
+        },
+        {
+          "type": "header",
+          "content": "Product 2"
+        },
+        {
+          "type": "product",
+          "id": "product_2",
+          "label": "Product"
+        },
+        {
+          "type": "select",
+          "id": "option_2",
+          "options": [
+            {
+              "value": "color",
+              "label": "Color"
+            },
+            {
+              "value": "size",
+              "label": "Size"
+            }
+          ],
+          "default": "color",
+          "label": "Option"
+        },
+        {
+          "type": "text",
+          "id": "value_2",
+          "label": "Option value",
+          "info": "Enter the deafult option value"
+        },
+        {
+          "type": "header",
+          "content": "Product 3"
+        },
+        {
+          "type": "product",
+          "id": "product_3",
+          "label": "Product"
+        },
+        {
+          "type": "select",
+          "id": "option_3",
+          "options": [
+            {
+              "value": "color",
+              "label": "Color"
+            },
+            {
+              "value": "size",
+              "label": "Size"
+            }
+          ],
+          "default": "color",
+          "label": "Option"
+        },
+        {
+          "type": "text",
+          "id": "value_3",
+          "label": "Option value",
+          "info": "Enter the deafult option value"
+        },
+        {
+          "type": "header",
+          "content": "Product 4"
+        },
+        {
+          "type": "product",
+          "id": "product_4",
+          "label": "Product"
+        },
+        {
+          "type": "select",
+          "id": "option_4",
+          "options": [
+            {
+              "value": "color",
+              "label": "Color"
+            },
+            {
+              "value": "size",
+              "label": "Size"
+            }
+          ],
+          "default": "color",
+          "label": "Option"
+        },
+        {
+          "type": "text",
+          "id": "value_4",
+          "label": "Option value",
+          "info": "Enter the deafult option value"
+        },
+        {
+          "type": "header",
+          "content": "Product 5"
+        },
+        {
+          "type": "product",
+          "id": "product_5",
+          "label": "Product"
+        },
+        {
+          "type": "select",
+          "id": "option_5",
+          "options": [
+            {
+              "value": "color",
+              "label": "Color"
+            },
+            {
+              "value": "size",
+              "label": "Size"
+            }
+          ],
+          "default": "color",
+          "label": "Option"
+        },
+        {
+          "type": "text",
+          "id": "value_5",
+          "label": "Option value",
+          "info": "Enter the deafult option value"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lookbookv2.0",
+      "blocks": [
+        {
+          "type": "look"
+        },
+        {
+          "type": "look"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

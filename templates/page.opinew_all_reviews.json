@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "main": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,88 @@
+{% comment %}
+  Renders a product card
+
+  Accepts:
+  - card_product: {Object} Product Liquid object (optional)
+
+  Usage:
+  {% render 'card-product-upsell', card_product: product %}
+{% endcomment %}
+
+<div class="product-card__cart-wrapper" data-upsell-card>
+    <div class="product-card__cart-image">
+        {{ card_product.featured_image | image_url: width: 200 | image_tag: loading: 'lazy' }}
+    </div>
+    <div class="product-card__cart-info">
+        <a href="{{ card_product.url }}" class="cart-item__name body-bold">
+            {{ card_product.title }}
+        </a>
+        <p class="product-option">
+            <span class="text-body">{{ card_product.selected_or_first_available_variant.price | money_with_currency }}</span>
+            {% if card_product.selected_or_first_available_variant.compare_at_price > card_product.selected_or_first_available_variant.price %}
+                <span class="cart-item__compared-price small-text">
+                  <s>{{ card_product.selected_or_first_available_variant.compare_at_price | money }}</s>
+                </span>
+                {% assign price = card_product.selected_or_first_available_variant.price | times: 1.00 %}
+                {% assign compare_at_price = card_product.selected_or_first_available_variant.compare_at_price | times: 1.00 %}
+                {% assign discount_percentage = compare_at_price | minus:price | divided_by: compare_at_price | times: 100 | round %}
+                <span class="cart-item__discount small-text">
+                    {{ discount_percentage }}% Off
+                </span>
+            {% endif %}
+        </p>
+    </div>
+    <product-form class="product-card__cart-atc">
+        {%- liquid
+            assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id
+        -%}
+        {%- form 'product',
+            card_product,
+            id: product_form_id,
+            class: 'form',
+            novalidate: 'novalidate',
+            data-type: 'add-to-cart-form'
+        -%}
+            <input
+                type="hidden"
+                name="id"
+                value="{{ card_product.selected_or_first_available_variant.id }}"
+                disabled
+            >
+            <button
+                id="{{ product_form_id }}-submit"
+                type="submit"
+                name="add"
+                class="quick-add__submit button button--secondary card--horizontal__quick-add"
+                aria-haspopup="dialog"
+                aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
+                aria-live="polite"
+                data-sold-out-message="true"
+                {% if card_product.selected_or_first_available_variant.available == false %}
+                    disabled
+                {% endif %}
+            >
+                <span>
+                    {%- if card_product.selected_or_first_available_variant.available -%}
+                        + Add
+                    {%- else -%}
+                        {{ 'products.product.sold_out' | t }}
+                    {%- endif -%}
+                </span>
+                <span class="sold-out-message hidden">
+                    {{ 'products.product.sold_out' | t }}
+                </span>
+                <div class="loading-overlay__spinner hidden">
+                    <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        class="spinner"
+                        viewBox="0 0 66 66"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                    </svg>
+                </div>
+            </button>
+        {%- endform -%}
+    </product-form>
+</div>

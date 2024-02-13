@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "sort": "alphabetical",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "cd215596-e210-4fc4-8c98-0bd12bb0e6ce": {
+      "type": "collection-list",
+      "blocks": {
+        "template--21106922225962__cd215596-e210-4fc4-8c98-0bd12bb0e6ce-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "1d322441-fbae-40f8-a1a6-b5ad7a93358f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "new"
+          }
+        },
+        "be6c5a11-f547-4a4a-9e68-b444ae8783de": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-headwear-caps-hats"
+          }
+        },
+        "f5dd08a5-7456-4976-a6c6-a8124c596c85": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-hoodies"
+          }
+        },
+        "4ad89187-edc4-4216-ad7e-03b91c8c7c37": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "icons"
+          }
+        },
+        "a3ef7881-7c90-4e34-bd6c-92ebb2267ee8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-jackets"
+          }
+        },
+        "cce37b7c-682c-49e5-9b99-04bb56bcb73c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-joggers-sweatpants"
+          }
+        },
+        "71d518c6-e49c-4838-92ca-2eb9dc9f52ac": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-overshirts"
+          }
+        },
+        "b80ad0d7-e6c9-4439-94e5-0c158314c97f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-shorts"
+          }
+        },
+        "a54c02a2-e460-4bbf-b43d-69202095d305": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "socks"
+          }
+        },
+        "39626fad-9156-4dde-834f-b6144f6a6788": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-sweatshirts"
+          }
+        },
+        "00b1e6bc-da21-48da-8a93-cd8bbf9ee77f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-swimwear"
+          }
+        },
+        "6426ccc5-8a2a-4c60-8b9d-75532425521d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-t-shirts"
+          }
+        },
+        "3c3da669-2bd1-420b-9987-0266f6ea993d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-cargo-pants-jeans-trousers"
+          }
+        },
+        "44d7f8cf-d170-42a7-8378-e10d8116e09d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "men-underwear"
+          }
+        }
+      },
+      "block_order": [
+        "template--21106922225962__cd215596-e210-4fc4-8c98-0bd12bb0e6ce-featured_collection-3",
+        "1d322441-fbae-40f8-a1a6-b5ad7a93358f",
+        "be6c5a11-f547-4a4a-9e68-b444ae8783de",
+        "f5dd08a5-7456-4976-a6c6-a8124c596c85",
+        "4ad89187-edc4-4216-ad7e-03b91c8c7c37",
+        "a3ef7881-7c90-4e34-bd6c-92ebb2267ee8",
+        "cce37b7c-682c-49e5-9b99-04bb56bcb73c",
+        "71d518c6-e49c-4838-92ca-2eb9dc9f52ac",
+        "b80ad0d7-e6c9-4439-94e5-0c158314c97f",
+        "a54c02a2-e460-4bbf-b43d-69202095d305",
+        "39626fad-9156-4dde-834f-b6144f6a6788",
+        "00b1e6bc-da21-48da-8a93-cd8bbf9ee77f",
+        "6426ccc5-8a2a-4c60-8b9d-75532425521d",
+        "3c3da669-2bd1-420b-9987-0266f6ea993d",
+        "44d7f8cf-d170-42a7-8378-e10d8116e09d"
+      ],
+      "settings": {
+        "title": "Our Collections",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cd215596-e210-4fc4-8c98-0bd12bb0e6ce"
+  ]
+}

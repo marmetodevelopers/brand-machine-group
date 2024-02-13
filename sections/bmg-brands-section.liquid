@@ -1,0 +1,131 @@
+{{ 'bmg-category-section.css' | asset_url | stylesheet_tag }}
+
+<style>
+.fl-btn-{{section.id}} .flickity-prev-next-button{
+background: {{section.settings.fk-btn-color}};
+}
+ .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+</style>
+
+<div class="section-{{ section.id }}-padding page-width">
+  <div class="brands-container no-box-shadow">
+    {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+            <div class="brands-container--item">
+                <a class="image-text__block-image" href="{{ block.settings.image_link }}">
+                    <img srcset="{{ block.settings.image | image_url: width: settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
+                        src="{{ block.settings.image | image_url: width: 760 }}"
+                        alt="{{ block.settings.image.alt | escape }}"
+                        loading="lazy"
+                        class="image-text__block-image-image"
+                        width="{{ block.settings.image.width }}"
+                        height="{{ block.settings.image.height }}">
+                </a>
+                <div class="image-text__block-text">
+                    {{ block.settings.image_text | link_to: block.settings.image_link }}
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Brands category section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_text",
+      "default": "NEW ARRIVALS",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_slider",
+      "default": false,
+      "label": "t:sections.image-banner.settings.show_text_box.label"
+    },
+ {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+{
+  "type": "color",
+  "id": "fk-btn-color",
+  "label": "Slider Button Color",
+  "default": "#000000"
+}
+
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Block",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.image-banner.settings.image.label",
+            "info": "Dimension (500x500)px"
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "Image link"
+        },
+        {
+          "type": "text",
+          "id": "image_text",
+          "default": "Image Text",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brands category section",
+      "blocks": [
+        {
+          "type": "block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

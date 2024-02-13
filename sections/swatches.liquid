@@ -1,0 +1,56 @@
+<style>
+  {% for block in section.blocks %}
+    {% if block.type == 'color_swatch' %}
+      {%- assign swatch_color_raw_data = block.settings.color_swatches_text | split: '|' -%}
+      {% for one_data in swatch_color_raw_data %}
+        {%- assign swatch_label = one_data | split: ':' | first | handleize -%}
+        {%- assign swatch_color = one_data | split: ':' | last -%}
+        .{{- swatch_label -}} {
+          background: {{-swatch_color-}}!important;
+        }
+      {% endfor %}
+    {% elsif block.type == 'image_swatch' %}
+    {% endif %}
+  {% endfor %}
+</style>
+{% schema %}
+{
+    "name": "Swatches",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Swatches"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "color_swatch",
+        "name": "Color Swatch",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "color_swatches_text",
+            "label": "Color label and Color",
+            "info": "Ex: Black:#000 | cobalt blue:#0047AB"
+          }
+        ]
+      },
+      {
+        "type": "image_swatch",
+        "name": "Image Swatch",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "image_swatches_text",
+            "label": "Title"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Swatches"
+      }
+    ]
+  }
+{% endschema %}

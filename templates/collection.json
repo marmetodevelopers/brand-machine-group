@@ -1,0 +1,344 @@
+{
+  "sections": {
+    "181689ab-824c-450f-83e4-22c71791895a": {
+      "type": "image-banner",
+      "blocks": {
+        "b81aa1f7-81fc-4c62-8be0-f6eb81689446": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "text-color-h": "#f4eded",
+            "heading_size": "h1"
+          }
+        },
+        "05aa7e9d-ddd4-4bc6-bc53-4696d7c2ba29": {
+          "type": "text",
+          "settings": {
+            "text": "Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Amet Dolor Sit.",
+            "text-color-p": "#fffafa",
+            "font-size": 21,
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "b81aa1f7-81fc-4c62-8be0-f6eb81689446",
+        "05aa7e9d-ddd4-4bc6-bc53-4696d7c2ba29"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image": "shopify:\/\/shop_images\/Rectangle_4151.jpg",
+        "image_banner_link": "",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-9f9449a3-e82b-43d5-aace-183e10c3ba44",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "72959c95-c299-471c-b93f-7aff20a412a0": {
+      "type": "image-text",
+      "blocks": {
+        "template--20397616857416__72959c95-c299-471c-b93f-7aff20a412a0-block-1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4239.jpg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "bca51810-6977-4693-a545-b99d87766b4e": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_2.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "551e1e1a-7132-4a78-a14e-ed1defad3972": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "2a85c858-bf49-4c25-a95e-b7562d6467c1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_1.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "d0d7fc60-783c-4777-a66f-9c9979ac9f37": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_4.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "ab532a8c-b388-476f-b767-b37fa541cbd0": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_2.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        },
+        "92dd18ce-6c7d-4e7e-bd02-c500eefd1bd4": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_43_3.svg",
+            "image_link": "",
+            "image_text": "Image Text"
+          }
+        }
+      },
+      "block_order": [
+        "template--20397616857416__72959c95-c299-471c-b93f-7aff20a412a0-block-1",
+        "bca51810-6977-4693-a545-b99d87766b4e",
+        "551e1e1a-7132-4a78-a14e-ed1defad3972",
+        "2a85c858-bf49-4c25-a95e-b7562d6467c1",
+        "d0d7fc60-783c-4777-a66f-9c9979ac9f37",
+        "ab532a8c-b388-476f-b767-b37fa541cbd0",
+        "92dd18ce-6c7d-4e7e-bd02-c500eefd1bd4"
+      ],
+      "settings": {
+        "heading_text": "NEW ARRIVALS",
+        "enable_slider": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "fk-btn-color": "#000000"
+      }
+    },
+    "3cb0fa8b-a0b4-4939-9663-f2ea9262c723": {
+      "type": "shop-by-category",
+      "blocks": {
+        "0ea85e89-864e-4a54-8758-793f49a3b8e9": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/pic2_bf234d19-7270-4457-9214-13bef2782f51.jpg",
+            "category_text": "Text",
+            "category_link": ""
+          }
+        },
+        "2b476b04-ae29-48ef-ae71-4786020fbbb9": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/img1_2c8008f3-94c4-48f4-bd23-3557fc6f048a.jpg",
+            "category_text": "Text",
+            "category_link": ""
+          }
+        },
+        "5dc45084-5f0e-4ab2-a36d-462a306e7a4d": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166.jpg",
+            "category_text": "Text",
+            "category_link": ""
+          }
+        },
+        "8bd95d26-08f0-4010-ad33-28b6096f5375": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/jack3.jpg",
+            "category_text": "Text",
+            "category_link": ""
+          }
+        },
+        "d624a9b8-8e57-4ac8-9134-453614e5eb83": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166_3.jpg",
+            "category_text": "Text",
+            "category_link": ""
+          }
+        },
+        "55fd713a-ad9b-4885-a2d2-520afc0e177a": {
+          "type": "block",
+          "settings": {
+            "category_image": "shopify:\/\/shop_images\/Rectangle_4166_1.jpg",
+            "category_text": "Text",
+            "category_link": ""
+          }
+        },
+        "84399eb9-b04e-4f57-8a63-784252385eee": {
+          "type": "block",
+          "settings": {
+            "category_text": "",
+            "category_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "0ea85e89-864e-4a54-8758-793f49a3b8e9",
+        "2b476b04-ae29-48ef-ae71-4786020fbbb9",
+        "5dc45084-5f0e-4ab2-a36d-462a306e7a4d",
+        "8bd95d26-08f0-4010-ad33-28b6096f5375",
+        "d624a9b8-8e57-4ac8-9134-453614e5eb83",
+        "55fd713a-ad9b-4885-a2d2-520afc0e177a",
+        "84399eb9-b04e-4f57-8a63-784252385eee"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "category_heading": "",
+        "view_all_link": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "button-bg-color": "#000000",
+        "fk-btn-color": "#231f20"
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "2df2d234-3c9c-4c12-920e-1b903f79ee58": {
+          "type": "product-type",
+          "settings": {
+            "text_1": "Trousers",
+            "text_2": "Fleece",
+            "text_3": "Sweatshirts",
+            "text_4": "Shirts",
+            "text_5": "Joggers"
+          }
+        },
+        "c0de3c13-64a2-4354-ac18-a3b61acdc787": {
+          "type": "product-type",
+          "settings": {
+            "text_1": "Hoodies",
+            "text_2": "Accessories",
+            "text_3": "Jackets",
+            "text_4": "Vests",
+            "text_5": "T-Shirts"
+          }
+        },
+        "a8ec9210-3f9c-4b15-92cd-b6df10c9dbf2": {
+          "type": "product-type",
+          "settings": {
+            "text_1": "Gilets",
+            "text_2": "Headwear",
+            "text_3": "Shorts",
+            "text_4": "",
+            "text_5": ""
+          }
+        },
+        "5124c060-d666-4bfa-95aa-a34959f02ca2": {
+          "type": "temperature-rating",
+          "settings": {
+            "image_text_1": "Light Weight | 5° C to -5° C",
+            "text_1": "tei1",
+            "image_text_2": "Versitile | 0° C to -15° C",
+            "text_2": "tei2",
+            "image_text_3": "Fundamental | 5° C to -5° C",
+            "text_3": "tei3",
+            "image_text_4": "Enduring | 5° C to -5° C",
+            "text_4": "tei4",
+            "image_text_5": "Extreme | 5° C to -5° C",
+            "text_5": "tei5"
+          }
+        },
+        "7544d9c7-0b23-4b29-9f67-71e540d0d4bd": {
+          "type": "fit",
+          "settings": {
+            "heading_1": "CLASSIC FIT",
+            "textarea_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "heading_2": "",
+            "textarea_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "2df2d234-3c9c-4c12-920e-1b903f79ee58",
+        "c0de3c13-64a2-4354-ac18-a3b61acdc787",
+        "a8ec9210-3f9c-4b15-92cd-b6df10c9dbf2",
+        "5124c060-d666-4bfa-95aa-a34959f02ca2",
+        "7544d9c7-0b23-4b29-9f67-71e540d0d4bd"
+      ],
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "title": "Featured Collection",
+        "first_word_color_picker": "#000000",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "ba6ab030-e8ff-4e77-9c93-84636484a608": {
+      "type": "featured-collection-grid",
+      "settings": {
+        "title": "Featured collection",
+        "first_word_color_picker": "#000000",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 14,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3442dbe6-5900-47f4-815e-f7791731ba3d": {
+      "type": "custom-featured-blog-section",
+      "disabled": true,
+      "settings": {
+        "blog_heading": "",
+        "blog": "",
+        "article_limit": 4
+      }
+    }
+  },
+  "order": [
+    "181689ab-824c-450f-83e4-22c71791895a",
+    "72959c95-c299-471c-b93f-7aff20a412a0",
+    "3cb0fa8b-a0b4-4939-9663-f2ea9262c723",
+    "banner",
+    "product-grid",
+    "ba6ab030-e8ff-4e77-9c93-84636484a608",
+    "3442dbe6-5900-47f4-815e-f7791731ba3d"
+  ]
+}

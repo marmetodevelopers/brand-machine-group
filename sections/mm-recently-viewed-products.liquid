@@ -1,0 +1,81 @@
+{%- capture section_settings -%}
+{
+  "productId": {{ product.id | json }}
+}
+{%- endcapture -%}
+<div class="collection-flickity-arrow custom-flickity-arrows collection-slider collection-slider__recently-viewed section-top-bottom-margin"
+  data-section-id="{{ section.id }}" 
+  data-section-type="mm-recently-viewed-products" 
+  data-section-settings='{{ section_settings }}'
+>
+  <div class="product_page_slider_container page-width">
+    {%- if section.settings.title != blank -%}    
+      <div class="collection-slider__header">
+        <div class="h1 collection-slider__heading related-products__heading collection-slider__heading-recently-viewed">
+          <span class="subtitle-text tm-blue-color">{{ section.settings.title | truncate: 20, "" }}</span>
+        </div>
+      </div> 
+    {%- endif -%}
+    <div class="mm-recentlyviewed__container">
+      {%- if template.name == 'search' -%}
+        <ul class="mm-recentlyviewed__products">
+          {%- assign parsed_terms = search.terms | split: ' OR ' -%}
+          {%- for parsed_term in parsed_terms -%}
+            {%- assign id = parsed_term | split: 'id:' | last | times: 1 -%}
+              {%- for product in search.results -%}
+                {% if product.available %}
+                  {%- if product.id == id -%}  
+                    <li class="product-recentlyviewed-slider">
+                        {% render 'card-product',
+                            card_product: product,
+                            show_quick_add: true,
+                            section_id: section.id
+                          %}
+                    </li>
+                  {%- break -%}
+                  {%- endif -%} 
+                {% endif %}
+              {%- endfor -%}
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+
+{%- comment -%} 
+  By default the section is hidden as we do not know if there are product yet
+{%- endcomment -%}
+{%- if template.name != 'search' or search.results_count == 0 -%}
+  <style>    
+    #shopify-section-{{ section.id }} {
+      display: none;
+    }
+  </style>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Recently viewed products",
+	"tag": "section",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Only be visible if at least one product has been viewed."
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "PREVIOUSLY VIEWED",
+        "info": "Max limit: 20 char"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Recently viewed products"
+      }
+    ]
+  }
+{% endschema %}

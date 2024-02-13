@@ -1,0 +1,142 @@
+.price {
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 1.4;
+  color: rgb(var(--color-foreground));
+}
+.price > * {
+  display: inline-block;
+  vertical-align: top;
+}
+.price.price--unavailable {
+  visibility: hidden;
+}
+.price--end {
+  text-align: right;
+}
+.price .price-item {
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+}
+.price__regular .price-item--regular {
+  margin-right: 0;
+}
+.price:not(.price--show-badge) .price-item--last:last-of-type {
+  margin: 0;
+}
+@media screen and (min-width: 750px) {
+  .price .price-item {
+    margin: 0 0.8rem 0 0;
+  }
+  .price {
+    margin-bottom: 0;
+  }
+}
+.price--large {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.price-body {
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 750px) {
+  .price--large {
+    font-size: 1.8rem;
+  }
+  .price-body {
+    font-size: 1.5rem;
+  }
+}
+.price--sold-out .price__availability,
+.price__regular {
+  display: block;
+}
+.price__sale,
+.price__availability,
+.price .price__badge-sale,
+.price .price__badge-sold-out,
+.price--on-sale .price__regular,
+.price--on-sale .price__availability {
+  display: none;
+}
+.price--sold-out .price__badge-sold-out,
+.price--on-sale .price__badge-sale,
+.volume-pricing--sale-badge .price__badge-sale {
+  display: inline-block;
+}
+.volume-pricing--sale-badge .price__badge-sale {
+  margin-left: 0.5rem;
+}
+.price--on-sale .price__sale {
+  display: initial;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.price--center {
+  display: initial;
+  justify-content: center;
+}
+.price--on-sale .price-item--regular {
+  text-decoration: line-through;
+  color: rgba(var(--color-foreground), 0.75);
+  font-size: 1.3rem;
+}
+.unit-price {
+  display: block;
+  font-size: 1.1rem;
+  letter-spacing: 0.04rem;
+  line-height: calc(1 + 0.2 / var(--font-body-scale));
+  margin-top: 0.2rem;
+  text-transform: uppercase;
+  color: rgba(var(--color-foreground), 0.7);
+}
+.product-page-compared {
+  font-size: 11px;
+}
+.discount-percentage {
+  color: #D11E21;
+  font-size: 1.1rem;
+}
+.card-information .price-item--sale {
+  font-size: 15px;
+  line-height: 1.4;
+}
+@media screen and (max-width: 750px) {
+  .card-information .price-item--sale {
+    font-size: 13px;
+  }
+}
+.card-information .product-compared__price {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+@media screen and (max-width: 750px) {
+  .card-information .product-compared__price {
+    font-size: 11px;
+  }
+}
+.card-information .discount-percentage {
+  font-size: 15px;
+  line-height: 1.4;
+}
+.product-page-compared {
+  font-weight: 400;
+}
+@media screen and (max-width: 750px) {
+  .card-information .discount-percentage {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
+.product__info-container .price .price-item {
+  font-weight: 700;
+}
+.product__media-list .product__media-item {
+  border: 0.5px solid #898989;
+}
+.product__media-list.grid {
+  column-gap: 12px;
+  row-gap: 12px;
+}

@@ -1,0 +1,34 @@
+
+
+<div class="product-description__main">
+    <div class="page-width">
+        <div class="product-description__heading h1">{{ section.settings.product_description_heading }}</div>
+        <div class="product-description__raw">
+            <div class="product-description__raw-content">
+              {{ product.metafields.description.short_product_description }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Description",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Product Description"
+      },
+      {
+        "type": "text",
+        "id": "product_description_heading",
+        "label": "Heading"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Description"
+      }
+    ]
+  }
+{% endschema %}

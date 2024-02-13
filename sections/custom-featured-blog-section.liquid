@@ -1,0 +1,121 @@
+{{ 'custom-featured-blog.css' | asset_url | stylesheet_tag }}
+<div class="custom-featured__blog custom-flickity-arrows custom-featured__blog--{{ section.id }}">
+  <div class="page-width">
+    <div class="custom-featured__blog-main">
+      <div class="custom-featured__blog-heading__container flex-space-center">
+          <div class="custom-featured__blog-heading subtitle-text tm-blue-color">
+            {%- if section.settings.blog_heading != blank -%}
+              {{ section.settings.blog_heading }} 
+            {%- else -%}
+              {{ section.settings.blog.title }} 
+            {%- endif -%}
+          </div> 
+        <div class="custom-featured__blog-viewall">
+          <a class="category-viewall--link text-body" href="{{ section.settings.view_all_link }}">
+            <span>VIEW ALL CATEGORIES</span>
+            <span>{% render 'icon-arrow' %}</span>
+          </a>
+        </div> 
+      </div>
+      <div class="custom-featured__blog-main__container">
+        <div class="custom-featured__blog-main__flex">
+          {%- for article in section.settings.blog.articles limit: section.settings.article_limit -%}
+            <div class="custom-featured__blog-article__content">
+              <div class="custom-featured__blog-article__content-inner"  href="{{ block.settings.category_link }}">
+                {%- if article.image -%}
+                  <a href="{{ article.url }}" class="custom-featured__article-image">
+                    <img
+                      srcset="
+                        {%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
+                        {%- if article.image.src.width >= 360 -%}{{ article.image.src | image_url: width: 360 }} 360w,{%- endif -%}
+                        {%- if article.image.src.width >= 533 -%}{{ article.image.src | image_url: width: 533 }} 533w,{%- endif -%}
+                        {%- if article.image.src.width >= 720 -%}{{ article.image.src | image_url: width: 720 }} 720w,{%- endif -%}
+                        {%- if article.image.src.width >= 1000 -%}{{ article.image.src | image_url: width: 1000 }} 1000w,{%- endif -%}
+                        {%- if article.image.src.width >= 1500 -%}{{ article.image.src | image_url: width: 1500 }} 1500w,{%- endif -%}
+                        {{ article.image.src | image_url }} {{ article.image.src.width }}w
+                      "
+                      src="{{ article.image.src | image_url: width: 533 }}"
+                      sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                      alt="{{ article.image.src.alt | escape }}"
+                      class="motion-reduce"
+                      loading="lazy"
+                      width="{{ article.image.width }}"
+                      height="{{ article.image.height }}"
+                    >
+                  </a>
+                {%- endif -%}
+                <div class="custom-featured__blog-article__info">
+                  <div class="custom-featured__blog-article__date caption-text">
+                    <span>{{ article.published_at | time_tag: format: 'date' }}</span>
+                  </div>
+                  <div class="custom-featured__blog-article__title subtitle-text flex-space-center">
+                    <span class="fe-article__title tm-blue-color">{{ article.title }}</span>
+                    <span class="article-share__button">
+                      {% render 'share-icon' %}
+                    </span>
+                  </div>
+                  <div class="custom-featured__blog-article__desc tm-blue-color text-body">
+                    {{ article.content | strip_html | truncatewords: 30 }}
+                  </div>
+                  <a href="{{ article.url }}" class="custom-featured__blog-article__url tm-blue-color caption-text">
+                    READ MORE
+                  </a>
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Custom Featured Blog",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Custom Featured Blog"
+      },
+      {
+        "type": "text",
+        "id": "blog_heading",
+        "label": "Heading",
+        "info": "Empty if you want to show the blog title"
+      },
+      {
+        "type": "blog",
+        "id": "blog",
+        "label": "Blog"
+      },
+      {
+        "type": "range",
+        "id": "article_limit",
+        "min": 1,
+        "max": 6,
+        "step": 1,
+        "default": 4,
+        "label": "Total Articles to Show"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Featured Blog"
+      }
+    ]
+  }
+{% endschema %}

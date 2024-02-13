@@ -1,0 +1,62 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "74d1322f-2463-4be7-a889-39f499a0b648": {
+          "type": "link_list",
+          "settings": {
+            "heading": "ABOUT US POLO ASSN",
+            "menu": "main-menu"
+          }
+        },
+        "500e6f50-9eb3-4d48-bcbe-348faa1b676d": {
+          "type": "link_list",
+          "settings": {
+            "heading": "CUSTOMER CARE",
+            "menu": "main-menu"
+          }
+        },
+        "c043c5fe-3b89-46cf-bde2-6f8fdffc2f17": {
+          "type": "link_list",
+          "settings": {
+            "heading": "POLICIES & LEGAL",
+            "menu": "main-menu"
+          }
+        },
+        "7009fa09-64e2-4d75-9ff2-3344f065eba1": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "74d1322f-2463-4be7-a889-39f499a0b648",
+        "500e6f50-9eb3-4d48-bcbe-348faa1b676d",
+        "c043c5fe-3b89-46cf-bde2-6f8fdffc2f17",
+        "7009fa09-64e2-4d75-9ff2-3344f065eba1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-bd063304-c438-4d4f-a7d2-daab371c5944",
+        "newsletter_enable": true,
+        "newsletter_heading": "NEWSLETTER SIGN UP",
+        "newsletter_heading_sub": "Sign up for exclusive updates, new arrivals & insider only discounts",
+        "enable_follow_on_shop": true,
+        "show_social": false,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

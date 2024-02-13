@@ -1,0 +1,5 @@
+{% if recommendations.performed and recommendations.products_count > 0 %}
+    {% for recommendation in recommendations.products %}
+        {% render 'card-product-upsell', card_product: recommendation %}
+    {% endfor %}
+{% endif %}

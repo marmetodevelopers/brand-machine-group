@@ -1,0 +1,105 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "e772725b-7012-4c33-94ba-a0dba56f6d15": {
+          "type": "announcement",
+          "settings": {
+            "text": "World Wide Shopping",
+            "link": "shopify:\/\/collections\/all"
+          }
+        },
+        "56a1a9c1-c3f1-40ce-a624-b45b1e425b37": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Uk Delivery",
+            "link": "shopify:\/\/collections"
+          }
+        },
+        "9cd45d18-8e9f-442c-85f1-e78bd082563a": {
+          "type": "announcement",
+          "settings": {
+            "text": "24\/7 CUSTOMER SERVICE",
+            "link": "shopify:\/\/collections"
+          }
+        },
+        "6a861aae-be1e-425d-8eb3-0635de9c72f1": {
+          "type": "announcement",
+          "settings": {
+            "text": "SIGN UP & ENJOY 10% OFF",
+            "link": "shopify:\/\/collections\/all"
+          }
+        },
+        "7f2e4410-0231-4597-8fb7-b6430a2686eb": {
+          "type": "announcement",
+          "settings": {
+            "text": "SIGN UP & ENJOY 10% OFF",
+            "link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "e772725b-7012-4c33-94ba-a0dba56f6d15",
+        "56a1a9c1-c3f1-40ce-a624-b45b1e425b37",
+        "9cd45d18-8e9f-442c-85f1-e78bd082563a",
+        "6a861aae-be1e-425d-8eb3-0635de9c72f1",
+        "7f2e4410-0231-4597-8fb7-b6430a2686eb"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "show_line_separator": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "150297dd-c34f-49b3-9ad9-e8eaaac5ae09": {
+          "type": "image_blocks",
+          "settings": {
+            "mega_menu_handle": "NEW",
+            "mega_menu_image_link": "shopify:\/\/collections\/outerwear-jackets-vests",
+            "mega_menu_overlay_text": "JACKETS & VESTS"
+          }
+        },
+        "2ab4e6ab-8e35-433b-8fc7-96ffcdc91908": {
+          "type": "image_blocks",
+          "settings": {
+            "mega_menu_handle": "SALE",
+            "mega_menu_image_link": "shopify:\/\/collections\/christmas-sales-upto70off",
+            "mega_menu_overlay_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "150297dd-c34f-49b3-9ad9-e8eaaac5ae09",
+        "2ab4e6ab-8e35-433b-8fc7-96ffcdc91908"
+      ],
+      "settings": {
+        "logo_position": "top-left",
+        "header_color_mobile": "#000000",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": false,
+        "color_scheme": "accent-1",
+        "menu_color_scheme": "background-2",
+        "enable_country_selector": true,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
