@@ -1,0 +1,28 @@
+.brand-collection-list-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    list-style-type: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.brand-collection-list-container::-webkit-scrollbar {
+    display: none;
+}
+.custom-brand-image{
+    width: 120px;
+    height: 120px;
+    @media screen and (min-width: 750px){
+        width: 140px;
+        height: 140px;    
+    }
+    background: transparent;
+}
+.brand-collection-list-container img{
+    border-radius: 50%;
+    border: 1px solid #9e9e9e;
+}
+.brand-collection-list-container .subtitle-text{
+    text-align: center;
+}
