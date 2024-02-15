@@ -228,25 +228,208 @@ FacetFiltersForm.setListeners();
 class PriceRange extends HTMLElement {
   constructor() {
     super();
-    this.querySelectorAll('input').forEach((element) =>
-      element.addEventListener('change', this.onRangeChange.bind(this))
-    );
-    this.setMinAndMaxValues();
+    const mockEvent = new Event('input');
+    this.querySelectorAll('input').forEach(element => element.addEventListener('input', this.onRangeChange.bind(this)));
+    this.setMinAndMaxValues(mockEvent);
   }
 
   onRangeChange(event) {
     this.adjustToValidValues(event.currentTarget);
-    this.setMinAndMaxValues();
+    this.setMinAndMaxValues(event);
   }
-
-  setMinAndMaxValues() {
+  
+  setMinAndMaxValues(event) {
     const inputs = this.querySelectorAll('input');
     const minInput = inputs[0];
     const maxInput = inputs[1];
-    if (maxInput.value) minInput.setAttribute('max', maxInput.value);
-    if (minInput.value) maxInput.setAttribute('min', minInput.value);
-    if (minInput.value === '') maxInput.setAttribute('min', 0);
-    if (maxInput.value === '') minInput.setAttribute('max', maxInput.getAttribute('max'));
+    const totalval = minInput.getAttribute('max') || document.querySelector("#Filter-Price-GTE").getAttribute('max');
+
+    // for Desktop getting the min and max value from the range
+    let minvalue = document.querySelector("#Filter-Price-GTE").value;
+    let maxvalue = document.querySelector("#Filter-Price-LTE").value;
+    
+    // for mobile getting the min and max value from the range
+    let mobileMinvalue = document.querySelector(".min-range_mobile").value;
+    let mobileMaxvalue = document.querySelector(".max-range_mobile").value;
+
+    minvalue = parseFloat(minvalue);
+    maxvalue = parseFloat(maxvalue);
+    mobileMinvalue = parseFloat(mobileMinvalue);
+    mobileMaxvalue = parseFloat(mobileMaxvalue);
+
+    // Conditon for overriding the overlap of thumb on dektop
+    if (maxvalue - minvalue <= 1500) {
+      if (maxvalue == parseInt(totalval)) {
+        //For desktop min value
+        let setMinValue;
+        
+        if (minvalue == parseInt(totalval)) {
+          setMinValue = minvalue - 1500;
+        } else {
+          setMinValue = minvalue;
+        }
+        
+        document.querySelector(".min-price").value = setMinValue;  
+        document.querySelector("#Filter-Price-GTE").value = setMinValue;
+        document.querySelector(".input-progress").style.left = (setMinValue / totalval) * 100 + "%"; //progress between the price range left
+        document.querySelector(".input-progress").style.right = 100 - (maxvalue / totalval) * 100 + "%"; //progress between the price range right
+    
+         //For desktop max value 
+        document.querySelector(".max-price").value = maxvalue;
+        document.querySelector("#Filter-Price-LTE").value= maxvalue;
+        document.querySelector(".input-progress").style.left = (setMinValue / totalval) * 100 + "%"; //progress between the price range left
+        document.querySelector(".input-progress").style.right = 100 - (maxvalue / totalval) * 100 + "%"; //progress between the price range right  
+
+        const maxrange = document.querySelector(".max-price");
+        const maxbubble = document.querySelector(".max-price_bubble");
+        const minrange = document.querySelector(".min-price");
+        const minbubble = document.querySelector(".min-price_bubble");
+
+        setMaxBubble(maxrange, maxbubble);
+        setBubble(minrange, minbubble);
+        
+        return;
+      }
+      
+      let gap = maxvalue - minvalue;
+      let realDifferenceGap = 1500 - gap;
+      
+      maxvalue += realDifferenceGap;
+
+      //For desktop min value
+      document.querySelector(".min-price").value = minvalue;  
+      document.querySelector(".input-progress").style.left = (minvalue / totalval) * 100 + "%"; //progress between the price range left
+      document.querySelector(".input-progress").style.right = 100 - (maxvalue / totalval) * 100 + "%"; //progress between the price range right
+  
+       //For desktop max value 
+      document.querySelector(".max-price").value = maxvalue;
+      document.querySelector("#Filter-Price-LTE").value= maxvalue;
+      document.querySelector(".input-progress").style.left = (minvalue / totalval) * 100 + "%"; //progress between the price range left
+      document.querySelector(".input-progress").style.right = 100 - (maxvalue / totalval) * 100 + "%"; //progress between the price range right
+
+      const maxrange = document.querySelector(".max-price");
+      const maxbubble = document.querySelector(".max-price_bubble");
+      
+      setMaxBubble(maxrange, maxbubble);
+      
+      event.preventDefault();
+      return false;
+    } else {      
+      //For desktop min value
+      document.querySelector(".min-price").value = minvalue;  
+      document.querySelector(".input-progress").style.left = (minvalue / totalval) * 100 + "%"; //progress between the price range left
+      document.querySelector(".input-progress").style.right = 100 - (maxvalue / totalval) * 100 + "%"; //progress between the price range right
+
+      //For desktop max value 
+      document.querySelector(".max-price").value = maxvalue;
+      document.querySelector(".input-progress").style.left = (minvalue / totalval) * 100 + "%"; //progress between the price range left
+      document.querySelector(".input-progress").style.right = 100 - (maxvalue / totalval) * 100 + "%"; //progress between the price range right
+    }
+
+    // Conditon for overriding the overlap of thumb on Mobile
+    if (mobileMaxvalue - mobileMinvalue <= 1500) {
+      if (mobileMaxvalue == parseInt(totalval)) {
+
+        let setMinValue;
+        
+        if (mobileMinvalue == parseInt(totalval)) {
+          setMinValue = mobileMinvalue - 1500;
+        } else {
+          setMinValue = mobileMinvalue;
+        }
+        
+        document.querySelector(".mobile_display-price.min-price").value = setMinValue;
+        document.querySelector(".min-range_mobile").value = setMinValue;
+        document.querySelector(".mobile-input-progress").style.left = (setMinValue / totalval) * 100 + "%"; //progress between the price range left
+        document.querySelector(".mobile-input-progress").style.right = 100 - (mobileMaxvalue / totalval) * 100 + "%"; 
+        
+        //For mobile max value
+        document.querySelector(".mobile_display-price.max-price").value = mobileMaxvalue;
+        document.querySelector(".max-range_mobile").value = mobileMaxvalue;
+        document.querySelector(".mobile-input-progress").style.left = (setMinValue / totalval) * 100 + "%"; //progress between the price range left
+        document.querySelector(".mobile-input-progress").style.right = 100 - (mobileMaxvalue / totalval) * 100 + "%"; 
+  
+        const MobileMaxrange = document.querySelector(".max-range_mobile");
+        const MobileMaxinbubble = document.querySelector(".mobile-max_bubble");
+        const MobileMinrange = document.querySelector(".min-range_mobile");
+        const MobileMininbubble = document.querySelector(".mobile-min_bubble");
+
+        setMaxBubble(MobileMaxrange, MobileMaxinbubble);
+        setBubble(MobileMinrange,MobileMininbubble);
+        
+        return;
+      }
+      
+      let gap = mobileMaxvalue - mobileMinvalue;
+      let realDifferenceGap = 1500 - gap;
+      
+      mobileMaxvalue += realDifferenceGap;
+      
+      document.querySelector(".mobile_display-price.min-price").value = mobileMinvalue;
+      document.querySelector(".mobile-input-progress").style.left = (mobileMinvalue / totalval) * 100 + "%"; //progress between the price range left
+      document.querySelector(".mobile-input-progress").style.right = 100 - (mobileMaxvalue / totalval) * 100 + "%"; 
+      
+      //For mobile max value
+      document.querySelector(".mobile_display-price.max-price").value = mobileMaxvalue;
+      document.querySelector(".max-range_mobile").value = mobileMaxvalue;
+      document.querySelector(".mobile-input-progress").style.left = (mobileMinvalue / totalval) * 100 + "%"; //progress between the price range left
+      document.querySelector(".mobile-input-progress").style.right = 100 - (mobileMaxvalue / totalval) * 100 + "%"; 
+
+      const MobileMaxrange = document.querySelector(".max-range_mobile");
+      const MobileMaxinbubble = document.querySelector(".mobile-max_bubble");
+
+      setMaxBubble(MobileMaxrange, MobileMaxinbubble);
+      
+      event.preventDefault();
+      return false;
+    } else {
+      //For mobile min value
+      document.querySelector(".mobile_display-price.min-price").value = mobileMinvalue;
+      document.querySelector(".mobile-input-progress").style.left = (mobileMinvalue / totalval) * 100 + "%"; //progress between the price range left
+      document.querySelector(".mobile-input-progress").style.right = 100 - (mobileMaxvalue / totalval) * 100 + "%"; 
+
+      //For mobile max value
+      document.querySelector(".mobile_display-price.max-price").value = mobileMaxvalue;
+      document.querySelector(".mobile-input-progress").style.left = (mobileMinvalue / totalval) * 100 + "%"; //progress between the price range left
+      document.querySelector(".mobile-input-progress").style.right = 100 - (mobileMaxvalue / totalval) * 100 + "%"; 
+    }
+
+    //bubble price for min desktop
+    const minrange = document.querySelector(".min-price");
+    const minbubble = document.querySelector(".min-price_bubble");
+
+    //for Mobile
+    const MobileMinrange = document.querySelector(".min-range_mobile");
+    const MobileMininbubble = document.querySelector(".mobile-min_bubble");
+
+    setBubble(MobileMinrange,MobileMininbubble)
+    setBubble(minrange, minbubble);
+    
+    function setBubble(range, minbubble) {
+      const val = range.value;
+      const getTotalValue = document.querySelector("#Filter-Price-GTE").getAttribute('max');
+      const totalval= minInput.getAttribute('max') || getTotalValue;
+    
+      minbubble.innerHTML = val;
+    }
+  
+    //bubble price for max mobile
+    const maxrange = document.querySelector(".max-price");
+    const maxbubble = document.querySelector(".max-price_bubble");
+
+    //for Mobile
+    const MobileMaxrange = document.querySelector(".max-range_mobile");
+    const MobileMaxinbubble = document.querySelector(".mobile-max_bubble");
+
+    function setMaxBubble(range, maxbubble) {
+      const val = range.value;
+      const getTotalValue = document.querySelector("#Filter-Price-GTE").getAttribute('max');
+      const totalval= minInput.getAttribute('max') || getTotalValue;
+      maxbubble.innerHTML = val;
+    }
+    
+    setMaxBubble(maxrange, maxbubble);
+    setMaxBubble(MobileMaxrange, MobileMaxinbubble);
   }
 
   adjustToValidValues(input) {
