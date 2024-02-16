@@ -2304,7 +2304,9 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 .header__icon--cart {
   position: relative;
-  margin-right: -1.2rem;
+  @media screen and (min-width: 750px){
+    margin-right: -1.2rem;
+  }
 }
 .header__icon--menu[aria-expanded="true"]::before {
   content: "";
@@ -3844,4 +3846,7 @@ color:white;
 .no-box-shadow{
   box-shadow: none;
   outline: none;
+}
+.text-center{
+  text-align: center;
 }
