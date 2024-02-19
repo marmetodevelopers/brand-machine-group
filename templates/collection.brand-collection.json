@@ -1,39 +1,7 @@
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
-      "disabled": true,
-      "settings": {
-        "show_collection_description": false,
-        "show_collection_image": true,
-        "color_scheme": "background-1"
-      }
-    },
     "181689ab-824c-450f-83e4-22c71791895a": {
       "type": "image-banner",
-      "blocks": {
-        "b81aa1f7-81fc-4c62-8be0-f6eb81689446": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "text-color-h": "#f4eded",
-            "heading_size": "h1"
-          }
-        },
-        "05aa7e9d-ddd4-4bc6-bc53-4696d7c2ba29": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text-color-p": "#fffafa",
-            "font-size": 21,
-            "text_style": "subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "b81aa1f7-81fc-4c62-8be0-f6eb81689446",
-        "05aa7e9d-ddd4-4bc6-bc53-4696d7c2ba29"
-      ],
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36,
@@ -51,26 +19,41 @@
         "show_text_below": true
       }
     },
-    "brand_collection_list_7iRNNY": {
-      "type": "brand-collection-list",
+    "brand_sub_collection_list_rTCtDH": {
+      "type": "brand-sub-collection-list",
       "settings": {
-        "collection_list": [
-          "new",
-          "levis",
-          "uspa",
-          "penfield"
-        ],
-        "color_scheme": "",
-        "padding-top": 0,
-        "padding-bottom": 0
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "category_heading": "",
+        "button-bg-color": "#363757"
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
       }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
         "image_ratio": "portrait",
+        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
@@ -85,9 +68,9 @@
     }
   },
   "order": [
-    "banner",
     "181689ab-824c-450f-83e4-22c71791895a",
-    "brand_collection_list_7iRNNY",
+    "brand_sub_collection_list_rTCtDH",
+    "banner",
     "product-grid"
   ]
 }
