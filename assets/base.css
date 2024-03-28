@@ -2178,10 +2178,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
     grid-template-areas: "left-icons heading icons";
     grid-template-columns: 1fr auto 1fr;
   }
-  .header:not(.header--middle-left, .header--middle-center)
-    .header__inline-menu {
-    margin-top: 1.05rem;
-  }
 }
 .header *[tabindex="-1"]:focus {
   outline: none;
@@ -3294,8 +3290,7 @@ details .icon-minus {
     width: 100%;
     height: auto;
   }
-  .header__heading,
-  .header__heading-link {
+  .header__heading {
     z-index: 4;
   }
   .header .header__inline-menu li {
@@ -3738,9 +3733,6 @@ details .icon-minus {
     grid-template-areas: "left-icons heading search icons";
     grid-template-columns: 0.5fr 3fr 1fr 1fr;
   }
-  /* .header__heading-link {
-    margin-left: -80px;
-  } */
   .header__heading-logo-wrapper {
     max-width: 150px;
     max-height: 56px;
@@ -3769,20 +3761,13 @@ details .icon-minus {
 }
 @media screen and (min-width: 750px) {
   a.header__heading-link.link.link--text.focus-inset {
-    padding-left: 10rem;
+    padding:1rem 0 1rem 10rem;
   }
   .header__icons.header__icons--localization.header-localization {
     padding-right: 10rem;
   }
-  /* ul.list-menu.list-menu--inline {
-    background: #13294b;
-    margin-top: 15px;
-    width: 100%;
-    justify-content: center;
-  } */
   ul.list-menu.list-menu--inline {
     background: white;
-    margin-top: 15px;
     width: 100%;
     justify-content: center;
     border-bottom: 1px solid #0000007d;
@@ -3810,22 +3795,23 @@ color:white;
   gap: 5px;
 }
 
-/* .header__menu___container {
-  border-top: 8.47px solid #a3293b;
-} */
 .header__active-menu-item {
   color: #fff;
 }
 header.header.header--top-left.header--mobile-center.header--has-menu.header--has-social {
   padding: 0;
-padding-top: 15px;
 }
+
+@media screen and (max-width:750px) {
+  header.header.header--top-left.header--mobile-center.header--has-menu.header--has-social {
+    padding: 0 1rem;
+  }
+}
+
 .banner__buttons{
   background:none;
 }
-/* .header__menu-item span{
-  color:#fff;
-} */
+
 .header__menu-item span{
   color:#000;
 }

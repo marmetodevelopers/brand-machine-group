@@ -336,6 +336,14 @@ slider-component.slider-component-full-width {
   justify-content: center;
 }
 
+button.slider-button.slider-button--next {
+  transform: rotate(-90deg);
+}
+
+button.slider-button.slider-button--prev {
+  transform: rotate(90deg);
+}
+
 @media screen and (min-width: 990px) {
   .slider:not(.slider--everywhere):not(.slider--desktop) + .slider-buttons {
     display: none;
