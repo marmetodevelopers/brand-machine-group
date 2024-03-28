@@ -1,40 +1,43 @@
 {{ 'bmg-category-section.css' | asset_url | stylesheet_tag }}
 
+
 <style>
-.fl-btn-{{section.id}} .flickity-prev-next-button{
-background: {{section.settings.fk-btn-color}};
-}
+  .fl-btn-{{section.id}} .flickity-prev-next-button{
+    background: {{section.settings.fk-btn-color}};
+  }
  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top }}px;
-    padding-bottom: {{ section.settings.padding_bottom }}px;
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
   }
 </style>
 
 <div class="section-{{ section.id }}-padding page-width">
   <div class="brands-container no-box-shadow">
     {% if section.blocks.size > 0 %}
-        {% for block in section.blocks %}
-            <div class="brands-container--item">
-                <a class="image-text__block-image" href="{{ block.settings.image_link }}">
-                    <img srcset="{{ block.settings.image | image_url: width: settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
-                        src="{{ block.settings.image | image_url: width: 760 }}"
-                        alt="{{ block.settings.image.alt | escape }}"
-                        loading="lazy"
-                        class="image-text__block-image-image"
-                        width="{{ block.settings.image.width }}"
-                        height="{{ block.settings.image.height }}">
-                </a>
-                <div class="image-text__block-text">
-                    {{ block.settings.image_text | link_to: block.settings.image_link }}
-                </div>
-            </div>
-        {% endfor %}
+      {% for block in section.blocks %}
+        <div class="brands-container--item">
+          <a class="image-text__block-image" href="{{ block.settings.image_link }}">
+            <img srcset="{{ block.settings.image | image_url: width: settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
+              src="{{ block.settings.image | image_url: width: 77 }}"
+              alt="{{ block.settings.image.alt | escape }}"
+              loading="lazy"
+              class="image-text__block-image-image"
+              width="{{ block.settings.image.width }}"
+              height="{{ block.settings.image.height }}"
+            >
+          </a>
+          <div class="image-text__block-text">
+            {{ block.settings.image_text | link_to: block.settings.image_link }}
+          </div>
+        </div>
+      {% endfor %}
     {% endif %}
   </div>
 </div>

@@ -26,7 +26,7 @@
         "05aa7e9d-ddd4-4bc6-bc53-4696d7c2ba29"
       ],
       "settings": {
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36,
         "image": "shopify:\/\/shop_images\/Rectangle_4151.jpg",
         "image_banner_link": "",
@@ -111,6 +111,7 @@
         "ab532a8c-b388-476f-b767-b37fa541cbd0",
         "92dd18ce-6c7d-4e7e-bd02-c500eefd1bd4"
       ],
+      "disabled": true,
       "settings": {
         "heading_text": "NEW ARRIVALS",
         "enable_slider": false,
@@ -273,7 +274,6 @@
         "5124c060-d666-4bfa-95aa-a34959f02ca2",
         "7544d9c7-0b23-4b29-9f67-71e540d0d4bd"
       ],
-      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
@@ -285,7 +285,7 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": true,
-        "enable_filtering": false,
+        "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": false,
         "columns_mobile": "2",

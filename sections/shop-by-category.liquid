@@ -1,70 +1,70 @@
 {{ 'shop-by-category.css' | asset_url | stylesheet_tag }}
 
 <style>
-.section-{{ section.id }}-btn-color {
-background: {{ section.settings.button-bg-color}};
-}
-.fl-btn-{{section.id}} .flickity-prev-next-button{
-background: {{section.settings.fk-btn-color}};
-}
-.section-{{ section.id }}-padding {
-padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-}
-@media screen and (min-width: 750px) {
-.section-{{ section.id }}-padding {
-padding-top: {{ section.settings.padding_top }}px;
-padding-bottom: {{ section.settings.padding_bottom }}px;
-}
+	.section-{{ section.id }}-btn-color {
+		background: {{ section.settings.button-bg-color}};
+	}
+	.fl-btn-{{section.id}} .flickity-prev-next-button{
+		background: {{section.settings.fk-btn-color}};
+	}
+	.section-{{ section.id }}-padding {
+		padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+		padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+	}
+	@media screen and (min-width: 750px) {
+		.section-{{ section.id }}-padding {
+			padding-top: {{ section.settings.padding_top }}px;
+			padding-bottom: {{ section.settings.padding_bottom }}px;
+		}
+	}
 </style>
 <div class="section-{{ section.id }}-padding">
-
-<div class="shop-category-section custom-flickity-arrows fl-btn-{{ section.id }} shop-category-section--{{ section.id }}">
-<div class="page-width">
-<div class="shop-category-section__main shop-category-section__main--{{ section.id }}">
-<div class="shop-category-heading__container{% if section.settings.category_heading == blank %} no-heading {% endif %}">
-{%- if section.settings.category_heading != blank -%}
-<div class="shop-category-heading subtitle-text tm-blue-color">
-{{ section.settings.category_heading }}
-</div> 
-{%- endif -%}
-{%- if section.settings.view_all_link != blank -%}
-<div class="shop-category-viewall">
-<a class="category-viewall--link text-body tm-blue-color" href="{{ section.settings.view_all_link }}"> 
-<span>VIEW ALL CATEGORIES</span>
-<span>{% render 'icon-arrow' %}</span>
-</a>
-</div> 
-{%- endif -%}
-</div>
-<div class="shop-category-main__container">
-{%- if section.blocks.size > 0 -%}
-<div class="shop-category-main__flex">
-{%- for block in section.blocks -%}
-<a class="shop-category-block__content"  href="{{ block.settings.category_link }}">
-{%- if block.settings.category_image != blank -%}
-<div class="shop-category-image">
-<img srcset="{{ block.settings.category_image | image_url: width: block.settings.image_width }}, {{ block.settings.category_image | image_url: width: image_size_2x }} 2x"
-src="{{ block.settings.category_image | image_url: width: 760 }}"
-alt="{{ block.settings.category_image.alt | escape }}"
-loading="lazy"
-width="{{ block.settings.category_image.width }}"
-height="{{ block.settings.category_image.height }}">
-</div>
-{%- endif -%}
-{%- if block.settings.category_text != blank -%}
-<div class="shop-category-subheading text-body section-{{ section.id }}-btn-color ">
-{{ block.settings.category_text }}
-</div>
-{%- endif -%}
-</a>
-{%- endfor -%}
-</div> 
-{%- endif -%}
-</div>
-</div> 
-</div>
-</div>
+	<div class="shop-category-section custom-flickity-arrows fl-btn-{{ section.id }} shop-category-section--{{ section.id }}">
+		<div class="page-width">
+			<div class="shop-category-section__main shop-category-section__main--{{ section.id }}">
+				<div class="shop-category-heading__container{% if section.settings.category_heading == blank %} no-heading {% endif %}">
+					{%- if section.settings.category_heading != blank -%}
+					<div class="shop-category-heading subtitle-text tm-blue-color">
+					{{ section.settings.category_heading }}
+					</div> 
+					{%- endif -%}
+				{%- if section.settings.view_all_link != blank -%}
+				<div class="shop-category-viewall">
+				<a class="category-viewall--link text-body tm-blue-color" href="{{ section.settings.view_all_link }}"> 
+				<span>VIEW ALL CATEGORIES</span>
+				<span>{% render 'icon-arrow' %}</span>
+				</a>
+				</div> 
+				{%- endif -%}
+				</div>
+				<div class="shop-category-main__container">
+				{%- if section.blocks.size > 0 -%}
+				<div class="shop-category-main__flex">
+				{%- for block in section.blocks -%}
+				<a class="shop-category-block__content"  href="{{ block.settings.category_link }}">
+				{%- if block.settings.category_image != blank -%}
+				<div class="shop-category-image">
+				<img srcset="{{ block.settings.category_image | image_url: width: block.settings.image_width }}, {{ block.settings.category_image | image_url: width: image_size_2x }} 2x"
+				src="{{ block.settings.category_image | image_url: width: 760 }}"
+				alt="{{ block.settings.category_image.alt | escape }}"
+				loading="lazy"
+				width="{{ block.settings.category_image.width }}"
+				height="{{ block.settings.category_image.height }}">
+				</div>
+				{%- endif -%}
+				{%- if block.settings.category_text != blank -%}
+				<div class="shop-category-subheading text-body section-{{ section.id }}-btn-color ">
+				{{ block.settings.category_text }}
+				</div>
+				{%- endif -%}
+				</a>
+				{%- endfor -%}
+				</div> 
+				{%- endif -%}
+				</div>
+			</div> 
+		</div>
+	</div>
 </div>
 
 {% schema %}
