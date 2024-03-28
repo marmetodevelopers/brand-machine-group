@@ -659,7 +659,7 @@
       "settings": {
         "blog_heading": "Blog",
         "blog": "news",
-        "article_limit": 4
+        "article_limit": 6
       }
     }
   },
